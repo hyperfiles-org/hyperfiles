@@ -1,0 +1,34 @@
+{
+    "properties":[
+        {
+            "name":"recordName",
+            "type":"string"
+            },
+        {
+            "name":"fields",
+            "type":"string",
+            "isMulti":"true"
+            },
+        {
+            "name":"recordValues",
+            "type":"string",
+            "isMulti":"true"
+            },
+        {
+            "name":"owner",
+            "type":"string",
+            "isMulti":false
+            },
+        {
+            "name":"isEncrypted",
+            "type":"boolean",
+            "isMulti":false
+            },
+        {
+            "name":"permissions",
+            "type":"every.near/type/thing",
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

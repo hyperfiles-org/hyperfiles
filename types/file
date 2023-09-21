@@ -1,0 +1,27 @@
+{
+    "properties":[
+        {
+            "name":"fileName",
+            "type":"string"
+            },
+        {
+            "name":"fileFormat",
+            "type":"every.near/type/thing",
+            "isMulti":false
+            },
+        {
+            "name":"fields",
+            "type":"every.near/type/thing",
+            "isMulti":"true"},
+        {
+            "name":"records",
+            "type":"every.near/type/thing",
+            "isMulti":"true"
+            },
+        {
+            "name":"owner",
+            "type":"string"
+            }
+        ],
+    "widgets":{}
+}

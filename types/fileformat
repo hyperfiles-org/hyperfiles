@@ -1,0 +1,14 @@
+{
+    "properties":[
+        {
+            "name":"formatName",
+            "type":"string"
+            },
+        {
+            "name":"fields",
+            "type":"every.near/type/thing",
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}
