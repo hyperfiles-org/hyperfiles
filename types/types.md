@@ -5,6 +5,11 @@
         - enables recursion, attribution/provenance, and
         - use properties to construct creators to put other data inside of it unique to a `Type`
 
+All Types have the same 3 fields
+- Name
+- Properties
+- isMulti
+
 ## Core Types
 
 ### [metadata](https://everything.dev/every.near/widget/every.type.create?typeSrc=every.near/type/metadata): redundant fields applicable to any type or thing

@@ -1,0 +1,14 @@
+{
+    "properties":[
+        {
+            "name":"fieldName",
+            "type":"string"
+            },
+        {
+            "name":"primitive",
+            "type":"string",
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}
