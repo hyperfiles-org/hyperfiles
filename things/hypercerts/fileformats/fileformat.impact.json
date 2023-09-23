@@ -1,0 +1,5 @@
+{
+    "data":{
+        "formatName":"impact",
+        "fields":[
+            null,{"value":"impactId"},{"value":"projectURL"},{"value":"scopeTags"},{"value":"startDate"},{"value":"endDate"},{"value":"contributors"},{"value":"usageRights"},{"value":"percentDistribution"},{"value":"allowlist"}]},"template":{"src":""},"type":"flowscience.near/type/fileformat"}
