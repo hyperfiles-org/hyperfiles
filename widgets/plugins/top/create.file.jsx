@@ -1,8 +1,8 @@
 const data = props.data || {};
-const type = props.type || "";
-const typeSrc = props.typeSrc || "every.near";
+const type = props.type || "flowscience.near/type/file";
+const typeSrc = props.typeSrc || "flowscience.near";
 const buildEdges = props.buildEdges;
-const template = props.template || "";
+const template = props.template || "flowscience.near/type/file";
 const thingId = props.thingId;
 //const defaultView = props.defaultView || "CREATE_THING";
 
@@ -237,6 +237,8 @@ const handleProfileSave = () => {
 return (
   <Container>
     <SidePanel>
+      {" "}
+      <h2>Create a Hyperfile</h2>
       <>
         <FormContainer>
           {state.isPreview ? (
