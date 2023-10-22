@@ -14,7 +14,7 @@ Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 - `Files` are an indexed combination of `fields` and `records`.
 - `Jobs` are a specific `fileformat` type that contain a set of instructions to run a Docker container using decentralized compute networks.
 
-![hyperfiles schema](public/image/core_schema.png)
+![hyperfiles schema](public/images/core_schema.png)
 
 ### Self-Assembly
 This will be developed after a front-end that enables users to manually interact with the knowledge graph.
@@ -117,10 +117,6 @@ TO DO: enable using queries to create new files.
 
 ## Core fileformat Types
 
-These enable files to be used for decentralized compute over Bacalhau via PLEX.
-
-[See example Colab notebook for off-chain demo.](https://colab.research.google.com/drive/1wHWzHR6zHYUm3RsPJ2pJh2t2WgLti34E?usp=sharing)
-
 ### job: an “.io file” to specify job type and input/output dir
 
 - jobName (str, s)
@@ -185,10 +181,6 @@ Designate output file formats to enable composability in pipeline builder.
 - description
 - baseCommand:
 
-[Tested working toolConfigFiles can be found on Github (see example below).](https://github.com/Open-Cann/plex/tree/main/tools)
-
-[https://github.com/Open-Cann/plex/blob/main/tools/fastqc/fastqc.json](https://github.com/Open-Cann/plex/blob/main/tools/fastqc/fastqc.json)
-
 ```json
 {
   "class": "Tool",
@@ -219,51 +211,6 @@ Designate output file formats to enable composability in pipeline builder.
     "outdata": {
       "type": "File",
       "glob": ["*.zip"]
-    }
-  }
-}
-```
-
-```json
-{
-  "class": "CommandLineTool",
-  "name": "equibind",
-  "description": "Docking of small molecules to a protein",
-  "baseCommand": ["/bin/bash", "-c"],
-  "arguments": [
-    "mkdir -p /tmp-inputs/tmp;",
-    "mkdir -p /tmp-outputs/tmp;",
-    "cp /inputs/* /tmp-inputs/tmp/;",
-    "ls /tmp-inputs/tmp;",
-    "cd /src && python /src/inference.py --config=/src/configs_clean/bacalhau.yml;",
-    "mv /tmp-outputs/tmp/* /outputs/;",
-    "mv /outputs/lig_equibind_corrected.sdf /outputs/$(inputs.protein.basename)_$(inputs.small_molecule.basename)_docked.$(inputs.small_molecule.ext);",
-    "mv /tmp-inputs/tmp/*.pdb /outputs/;"],
-  "dockerPull": "ghcr.io/labdao/equibind:main@sha256:21a381d9ab1ff047565685044569c8536a55e489c9531326498b28d6b3cc244f",
-  "gpuBool": false,
-  "networkBool": false,
-  "inputs": {
-    "protein": {
-      "type": "File",
-      "item": "",
-      "glob": ["*.pdb"]
-    },
-    "small_molecule": {
-      "type": "File",
-      "item": "",
-      "glob": ["*.sdf", "*.mol2"]
-    }
-  },
-  "outputs": {
-    "best_docked_small_molecule": {
-      "type": "File",
-      "item": "",
-      "glob": ["*_docked.sdf", "*_docked.mol2"]
-    },
-    "protein": {
-      "type": "File", 
-      "item": "",
-      "glob": ["*.pdb"]
     }
   }
 }
