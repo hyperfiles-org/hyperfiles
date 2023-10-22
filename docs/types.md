@@ -2,44 +2,39 @@
     - Has a “name”, an “owner”, and a list of “properties”
     - Properties have their own `Type` definitions
     - a `Type` can have properties that follow other `Types`
-        - enables recursion, attribution/provenance, and
+        - enables recursion and attribution/provenance
         - use properties to construct creators to put other data inside of it unique to a `Type`
 
-All Types have the same 3 fields
+All Types have the same three fields:
 - Name
 - Properties
 - isMulti
 
-## Core Types
+---
 
-### [metadata](https://everything.dev/every.near/widget/every.type.create?typeSrc=every.near/type/metadata): redundant fields applicable to any type or thing
+## Core Hyperfiles Types
 
+[metadata](https://everything.dev/every.near/widget/every.type.create?typeSrc=every.near/type/metadata): redundant fields applicable to any type or thing
 - description (s)
 - image (s)
 - backgroundImage (s)
 
-### [file](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/file): a collection of records
-
+[file](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/file): a collection of records
 - fileName (str, s)
 - fileFormat (thing, s)
 - records (thing, m)
 - owner (str, s)
 - permissions (thing, s)
 
-### [fileformat](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/fileformat): standard types for files
-
+[fileformat](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/fileformat): standard types for files
 - formatName (str, s)
 - fields (thing, m)
-- ~~fileNames (thing, m)~~
 
-### [field](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/field): primitives that compose into fileFormats
-
+[field](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/field): primitives that compose into fileFormats
 - fieldName (str, s)
 - primitive (str, s)
-- ~~fileFormats (thing, m)~~
 
-### [record](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/record): individual pieces of data (a datum)
-
+[record](https://everything.dev/every.near/widget/every.type.create?typeSrc=flowscience.near/type/record): individual pieces of data (a datum)
 - recordName (str, s)
 - fields (str, m)
 - recordValues (str, m)
@@ -47,18 +42,17 @@ All Types have the same 3 fields
 - isEncrypted (bool, s)
 - permissions (thing, s)
 
-### permissions:
-
+permissions:
 - TBD
 - sking.near/widget/DAO.Permissions
 
-## Core fileformat Types
+## Job Fileformats
 
-These enable files to be used for decentralized compute over Bacalhau via PLEX.
+These enable files to be used as instrutions to run jobs over decentralized compute networks.
 
 [See example Colab notebook for off-chain demo.](https://colab.research.google.com/drive/1wHWzHR6zHYUm3RsPJ2pJh2t2WgLti34E?usp=sharing)
 
-### job: an “.io file” to specify job type and input/output dir
+[job](): an “.io file” to specify job type and input/output dir
 
 - jobName (str, s)
 - jobType (thing, s)
@@ -100,15 +94,15 @@ These enable files to be used for decentralized compute over Bacalhau via PLEX.
 ]
 ```
 
-### jobtype: standard types for jobs
+[jobtype](): standard types for jobs
 
 Is this redundant with toolconfig???
 
 - jobType (str, s)
-- toolConfigFile (thing, s)
+- configFile (thing, s)
 - jobFiles (thing, m)
 
-### toolconfig: specify container path and jobtype parameters
+[config](): specify container path and jobtype parameters
 
 Enforce input file formats are of the appropriate type (so the job will work).
 
@@ -122,9 +116,6 @@ Designate output file formats to enable composability in pipeline builder.
 - description
 - baseCommand:
 
-[Tested working toolConfigFiles can be found on Github (see example below).](https://github.com/Open-Cann/plex/tree/main/tools)
-
-https://github.com/Open-Cann/plex/blob/main/tools/fastqc/fastqc.json
 
 ```json
 {
