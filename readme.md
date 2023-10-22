@@ -4,7 +4,7 @@
 
 # Hyperfiles
 
-![hypefiles logo](public/images/logoblack.png)
+![hypefiles logo](images/logoblack.png)
 
 Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 
@@ -14,7 +14,7 @@ Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 - `Files` are an indexed combination of `fields` and `records`.
 - `Jobs` are a specific `fileformat` type that contain a set of instructions to run a Docker container using decentralized compute networks.
 
-![hyperfiles schema](public/images/core_schema.png)
+![hyperfiles schema](images/core_schema.png)
 
 ### Self-Assembling Data Structures
 This will be developed after a front-end that enables users to manually interact with the knowledge graph.
