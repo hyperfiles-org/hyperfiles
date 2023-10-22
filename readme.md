@@ -1,14 +1,39 @@
+🚧 **_Currently under active development._** 🚧
+
+---
+
 # Hyperfiles
 
-![EveryFile_EveryJob.png](EveryFile_EveryJob.png)
+![hypefiles logo](public/images/logoblack.png)
+
+Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
+
+### A Standardized Type Schema
+- The Hyperfiles knowledge graph is composed by reducing any piece of data or code into a set of unique objects, called `records`, which map to a set of pre-defined `fields`.
+- Each set of `fields` composes into a unique `fileformat`. Likewise, each set of `records` composes into a unique `file`.
+- `Files` are an indexed combination of `fields` and `records`.
+- `Jobs` are a specific `fileformat` type that contain a set of instructions to run a Docker container using decentralized compute networks.
+
+![hyperfiles schema](public/image/core_schema.png)
+
+### Self-Assembly
+This will be developed after a front-end that enables users to manually interact with the knowledge graph.
+
+- [ ] Any data or job can be mixed and matched, enabling seamless composability across apps.
+- [ ] Fileformats are automatically detected & categorized when new data is entered or when new fileformats are created during queries and jobs.
+- [ ] Fields are analyzed to identify primitive types and basic statistics
+- [ ] Core types & user-specific types?
+- [ ] Marketplace price determination
 
 ## Core Plugins
 
-### composable.publish: create a new file
+### `newFile`: create a new file via upload, manual input, and queries
 
 LOGIC: enable upload if file matches a template. Otherwise, use input fields.
 
-Detect:
+Detect: fileformat by creating an array of fields and checking if fields exist, then check if that combination of fields exists
+
+To Do: create unique IDs for each unique Thing (start with core types)
 
 LOGIC: create.field (xN) → create.fileFormat (x0-1) → create.record (xN) → create.file (x1)
 
@@ -25,7 +50,7 @@ TO DO: enable using queries to create new files.
     - recordOwners
 - permissions
 
-### composable.query: find any set of things, then mix and match
+### `query`: find any set of things, then mix and match
 
 - formatName
 - fieldName
@@ -41,7 +66,7 @@ TO DO: enable using queries to create new files.
 - image
 - backgroundImage
 
-### composable.job: create a new job file and execute a tool config
+### `newJob`: create a new job file and execute a tool config
 
 - jobName (str, s)
 - jobType (thing, s)
