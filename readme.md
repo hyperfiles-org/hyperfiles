@@ -1,4 +1,4 @@
-🚧 **_Under active development. Use at your own risk._** 🚧
+🚧 **_Under active development. Please use wisely._** 🚧
 
 ---
 
@@ -31,7 +31,7 @@ Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 ![hyperfiles schema](images/core_schema.png)
 
 ### Self-Assembling Data Structures
-This will be developed after a front-end that enables users to manually interact with the knowledge graph.
+These features will be developed after a front-end that enables users to manually interact with the knowledge graph.
 
 - [ ] Any data or job can be mixed and matched, enabling seamless composability across apps.
 - [ ] Fileformats are automatically detected & categorized when new data is entered or when new fileformats are created during queries and jobs.
@@ -43,29 +43,29 @@ This will be developed after a front-end that enables users to manually interact
 
 ### Components
 
-**Integrated frontend** [In Progress](https://github.com/flowscience/hyperfiles/tree/master/widgets/plugins/hyperfiles.jsx)
+**Integrated frontend** - [In Progress](https://github.com/flowscience/hyperfiles/tree/master/widgets/plugins/hyperfiles.jsx)
 - [ ] Publish (file/fileformat) - coming soon!
-- [ ] Explorer - coming soon!
+- [ ] Explore - coming soon!
 - [ ] Profile - coming soon!
 
 **Top-Level Plugins**
-- `newFile`: create a new file via upload, manual input, and queries - [MVP complete](https://everything.dev/flowscience.near/widget/create.file)
-- `query`: find any set of things, then mix and match - [coming soon!]
-- `newJob`: create a new job file and execute a tool config - [coming soon!]
+- `newFile`: create a new file via upload, manual input, and queries - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.file)
+- `query`: find any set of things, then mix and match - coming soon!
+- `newJob`: create a new job file and execute a tool config - coming soon!
 
 **Mid-Level Plugins**
-- `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - [MVP complete](https://everything.dev/flowscience.near/widget/create.fileFormat)
-- `create.record`: create a new record thing - [MVP complete](https://everything.dev/flowscience.near/widget/create.record)
+- `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.fileFormat)
+- `create.record`: create a new record thing - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.record)
 
 **Backend Plugins**
-- `create.field`: create a new field thing - [MVP complete](https://everything.dev/flowscience.near/widget/create.field)
+- `create.field`: create a new field thing - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.field)
 
 **Core Types**
-- [field](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/field.json)
-- [record](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/record.json)
-- [fileformat](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/fileformat.json)
-- [file](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/file.json)
-- [metadata](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/metadata.json) - needs update!
+1. [field](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/field.json)
+2. [record](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/record.json)
+3. [fileformat](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/fileformat.json)
+4. [file](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/file.json)
+5. [metadata](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/metadata.json) - needs update!
 
 ---
 
@@ -79,4 +79,6 @@ This will be developed after a front-end that enables users to manually interact
 
 ---
 
-Built by [flowscience](https://github.com/flowscience). <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/800px-PD-icon-black.svg.png" alt="Unlicense" width="20" height="20" /> [No rights reserved](https://github.com/flowscience/hyperfiles/blob/master/LICENSE).
+🧬 Built by [flowscience](https://github.com/flowscience). <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/800px-PD-icon-black.svg.png" alt="Unlicense" width="12" height="12" /> [No rights reserved](https://github.com/flowscience/hyperfiles/blob/master/LICENSE).
+
+---
