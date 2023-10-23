@@ -28,109 +28,34 @@ This will be developed after a front-end that enables users to manually interact
 - [ ] Marketplace price determination
 
 ---
-### Types
 
-**Plugins**
+### Components
 
-1. `newFile`: create a new file via upload, manual input, and queries
+Main frontend: in development (hyperfiles.jsx)
 
-- Enable upload if file matches a template. Otherwise, use input fields.
-- Fileformat by creating an array of fields and checking if fields exist, then check if that combination of fields exists
-- Create unique IDs for each unique Thing (start with core types)
-- create.field (xN) → create.fileFormat (x0-1) → create.record (xN) → create.file (x1)
-- Enable using queries to create new files
+**Top-Level Plugins**
+- `newFile`: create a new file via upload, manual input, and queries - MVP complete
+- `query`: find any set of things, then mix and match - not started yet
+- `newJob`: create a new job file and execute a tool config - not started yet
 
-2. `query`: find any set of things, then mix and match
+**Mid-Level Plugins**
+- `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - MVP complete
+- `create.record`: create a new record thing - MVP complete
 
-3. `newJob`: create a new job file and execute a tool config
+**Backend Plugins**
+- `create.field`: create a new field thing - MVP complete
 
-
-## Index of Things
-
-metadata
-
-- every thing else has a metadata thing associated with it already, right???
-    - or is metadata stored in the socialDB contract?
-    - [https://near.org/efiz.near/widget/every.type.metadata](https://near.org/efiz.near/widget/every.type.metadata)
+**Core Types**
+- [field]()
+- [record]()
+- [fileformat]()
+- [file]() 
 
 ---
 
-### files
-
-Core
-
-- every.file
-- every.fileformat
-- every.record
-- every.field
-- every.job
-- every.jobtype
-- every.toolconfig
-- {accountId}/thing/impact.file
-
-Featured
-
-- every.hypercert
-
----
-
-### fileformats
-
-- [hypercert](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/fileformat.hypercert)
-
-[fileformat.hypercert](fileformat%20hypercert%20cea53b0494314bc4a408ba2c6406ae82.md)
-
-- impact
-
-[fileformat.impact](fileformat%20impact%20c26a1aacf4084e89b4440d9484cbcb15.md)
-
-- fileformat.job
-- fileformat.jobType
-- fileformat.toolConfig
-
-types = fileformats = types???
-
-[type:artist](type%20artist%20455f0ff7ab2243b5974fb43b0e6bf957.md)
-
-[type:DAO](type%20DAO%20188d1ff79c43474eaa4caf652d66d05d.md)
-
----
-
-### fields
-
-- [hypercertName](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertName) (string, s)
-- [hypercertProject](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertProject) (url, s)
-- [hypercertScopeTags](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertScopeTags) (list, s)
-- [hypercertWorkStart](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertWorkStart) (date, s)
-- [hypercertWorkEnd](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertWorkEnd) (date, s) - how to make indefinite? (leave empty)
-- [hypercertContributors](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertContributors) (list, s)
-- [hypercertUsageRights](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertUsageRights) (str, s)
-- [hypercertAllowlist](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertAllowlist) (list, s)
-- [hypercertDistribution](https://everything.dev/mob.near/widget/WidgetSource?src=flowscience.near/thing/field.hypercertDistribution) (int, s) - how to set deduplicate = TRUE???
-- description (string, s)
-- image (img, s)
-- backgroundImage (img, s)
-
----
-
-### records
-
-- hypercert.1
-- file.1
-- job.1
-
----
-
-### jobs
-
-- TBD
-
----
-
-### jobTypes
-
-- TBD
-
----
-
-return <Widget src="efiz.testnet/widget/H1" config={{ networkId: 'testnet' }} props={{}} />;
+**To Do**
+- [ ] Enable upload if file matches a template. Otherwise, use input fields.
+- [ ] Fileformat by creating an array of fields and checking if fields exist, then check if that combination of fields exists
+- [ ] Create unique IDs for each unique Thing (start with core types)
+- [ ] create.field (xN) → create.fileFormat (x0-1) → create.record (xN) → create.file (x1)
+- [ ] Enable using queries to create new files
