@@ -8,7 +8,9 @@
 
 Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 
-### A Standardized Type Schema
+---
+
+### Standardized Type Schema
 - The Hyperfiles knowledge graph is composed by reducing any piece of data or code into a set of unique objects, called `records`, which map to a set of pre-defined `fields`.
 - Each set of `fields` composes into a unique `fileformat`. Likewise, each set of `records` composes into a unique `file`.
 - `Files` are an indexed combination of `fields` and `records`.
@@ -26,54 +28,22 @@ This will be developed after a front-end that enables users to manually interact
 - [ ] Marketplace price determination
 
 ---
+### Types
 
-[Types]()
-Plugins
-- `newFile`: create a new file via upload, manual input, and queries
+**Plugins**
 
-LOGIC: enable upload if file matches a template. Otherwise, use input fields.
+1. `newFile`: create a new file via upload, manual input, and queries
 
-Detect: fileformat by creating an array of fields and checking if fields exist, then check if that combination of fields exists
+- Enable upload if file matches a template. Otherwise, use input fields.
+- Fileformat by creating an array of fields and checking if fields exist, then check if that combination of fields exists
+- Create unique IDs for each unique Thing (start with core types)
+- create.field (xN) → create.fileFormat (x0-1) → create.record (xN) → create.file (x1)
+- Enable using queries to create new files
 
-To Do: create unique IDs for each unique Thing (start with core types)
+2. `query`: find any set of things, then mix and match
 
-LOGIC: create.field (xN) → create.fileFormat (x0-1) → create.record (xN) → create.file (x1)
+3. `newJob`: create a new job file and execute a tool config
 
-TO DO: enable using queries to create new files.
-
-- fileName (str, s)
-- fields (thing, m)
-    - fieldName
-        - TEST: check if fieldName exists
-    - primitive
-    - single or multiple???
-- records (thing, m)
-    - recordValues
-    - recordOwners
-- permissions
-
-`query`: find any set of things, then mix and match
-
-- formatName
-- fieldName
-- fileName
-- fieldType
-- recordNames
-- recordValue
-- recordOwner
-- jobName
-- jobType
-- jobCode
-- description
-- image
-- backgroundImage
-
-`newJob`: create a new job file and execute a tool config
-
-- jobName (str, s)
-- jobType (thing, s)
-- inputFiles (thing, m)
-- permissions
 
 ## Index of Things
 
