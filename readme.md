@@ -1,4 +1,4 @@
-🚧 **_Currently under active development._** 🚧
+🚧 **_Under active development. Use at your own risk._** 🚧
 
 ---
 
@@ -13,12 +13,12 @@ Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 2. [Create a new file](https://everything.dev/flowscience.near/widget/create.file) (attestation)
 
 **Guides and Example Use Cases** (in progress)
-- [Guide: "How to Create a New Fileformat"] - coming soon!
-- [Guide: "How to Create a New File"] - coming soon!
-- [Guide: "How to Use Attestations"] - coming soon!
-- [Use Case: "Hypercerts on BOS"](https://github.com/open-cann/hypercerts-on-bos)
-- [Use Case: "Scientific Fileformat Ontology (SFO)"] - coming soon!
-- [Guide: "Hyperfiles Development Roadmap"] - coming soon!
+- Guide: ["How to Create a New Fileformat"] - coming soon!
+- Guide: ["How to Create a New File"] - coming soon!
+- Guide: ["How to Use Attestations"] - coming soon!
+- Use Case: ["Hypercerts on BOS"](https://github.com/open-cann/hypercerts-on-bos)
+- Use Case: ["Scientific Fileformat Ontology (SFO)"] - coming soon!
+- Guide: ["Hyperfiles Development Roadmap"] - coming soon!
 
 ---
 
@@ -43,12 +43,15 @@ This will be developed after a front-end that enables users to manually interact
 
 ### Components
 
-Integrated frontend in development (Hyperfiles.jsx)
+**Integrated frontend** [In Progress](https://github.com/flowscience/hyperfiles/tree/master/widgets/plugins/hyperfiles.jsx)
+- [ ] Publish (file/fileformat) - coming soon!
+- [ ] Explorer - coming soon!
+- [ ] Profile - coming soon!
 
 **Top-Level Plugins**
 - `newFile`: create a new file via upload, manual input, and queries - [MVP complete](https://everything.dev/flowscience.near/widget/create.file)
-- `query`: find any set of things, then mix and match - [not started]
-- `newJob`: create a new job file and execute a tool config - [not started]
+- `query`: find any set of things, then mix and match - [coming soon!]
+- `newJob`: create a new job file and execute a tool config - [coming soon!]
 
 **Mid-Level Plugins**
 - `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - [MVP complete](https://everything.dev/flowscience.near/widget/create.fileFormat)
