@@ -8,6 +8,18 @@
 
 Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 
+**Quick Start**
+1. [Create a new fileformat](https://everything.dev/flowscience.near/widget/create.fileFormat) (schema)
+2. [Create a new file](https://everything.dev/flowscience.near/widget/create.file) (attestation)
+
+**Guides and Example Use Cases** (in progress)
+- [Guide: "How to Create a New Fileformat"] - coming soon!
+- [Guide: "How to Create a New File"] - coming soon!
+- [Guide: "How to Use Attestations"] - coming soon!
+- [Use Case: "Hypercerts on BOS"](https://github.com/open-cann/hypercerts-on-bos)
+- [Use Case: "Scientific Fileformat Ontology (SFO)"] - coming soon!
+- [Guide: "Hyperfiles Development Roadmap"] - coming soon!
+
 ---
 
 ### Standardized Type Schema
@@ -31,25 +43,26 @@ This will be developed after a front-end that enables users to manually interact
 
 ### Components
 
-Main frontend: in development (hyperfiles.jsx)
+Integrated frontend in development (Hyperfiles.jsx)
 
 **Top-Level Plugins**
-- `newFile`: create a new file via upload, manual input, and queries - MVP complete
-- `query`: find any set of things, then mix and match - not started yet
-- `newJob`: create a new job file and execute a tool config - not started yet
+- `newFile`: create a new file via upload, manual input, and queries - [MVP complete](https://everything.dev/flowscience.near/widget/create.file)
+- `query`: find any set of things, then mix and match - [not started]
+- `newJob`: create a new job file and execute a tool config - [not started]
 
 **Mid-Level Plugins**
-- `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - MVP complete
-- `create.record`: create a new record thing - MVP complete
+- `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - [MVP complete](https://everything.dev/flowscience.near/widget/create.fileFormat)
+- `create.record`: create a new record thing - [MVP complete](https://everything.dev/flowscience.near/widget/create.record)
 
 **Backend Plugins**
-- `create.field`: create a new field thing - MVP complete
+- `create.field`: create a new field thing - [MVP complete](https://everything.dev/flowscience.near/widget/create.field)
 
 **Core Types**
-- [field]()
-- [record]()
-- [fileformat]()
-- [file]() 
+- [field](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/field.json)
+- [record](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/record.json)
+- [fileformat](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/fileformat.json)
+- [file](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/file.json)
+- [metadata](https://github.com/flowscience/hyperfiles/blob/master/types/core_types/metadata.json) - needs update!
 
 ---
 
@@ -59,3 +72,8 @@ Main frontend: in development (hyperfiles.jsx)
 - [ ] Create unique IDs for each unique Thing (start with core types)
 - [ ] create.field (xN) → create.fileFormat (x0-1) → create.record (xN) → create.file (x1)
 - [ ] Enable using queries to create new files
+- [ ] Index [EAS](https://attest.sh/) & enable cross-minting
+
+---
+
+Built by [flowscience](https://github.com/flowscience). <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/800px-PD-icon-black.svg.png" alt="Unlicense" width="20" height="20" /> [No rights reserved](https://github.com/flowscience/hyperfiles/blob/master/LICENSE).
