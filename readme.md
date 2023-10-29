@@ -16,7 +16,8 @@ Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
 - Guide: ["How to Create a New Fileformat"] - coming soon!
 - Guide: ["How to Create a New File"] - coming soon!
 - Guide: ["How to Use Attestations"] - coming soon!
-- Use Case: ["Hypercerts on BOS"](https://github.com/open-cann/hypercerts-on-bos)
+- Use Case: ["Near Attestation Service"](https://near.social/flowscience.near/widget/NAS) - in progress!
+- Use Case: ["Hypercerts on BOS" - demo](https://near.social/flowscience.near/widget/hypercert.page) ~ [Docs](https://github.com/open-cann/hypercerts-on-bos)
 - Use Case: ["Scientific Fileformat Ontology (SFO)"] - coming soon!
 - Guide: ["Hyperfiles Development Roadmap"] - coming soon!
 
@@ -43,21 +44,21 @@ These features will be developed after a front-end that enables users to manuall
 
 ### Components
 
-**Integrated frontend** - [In Progress](https://github.com/flowscience/hyperfiles/tree/master/widgets/plugins/hyperfiles.jsx)
+**Integrated Frontend** - [In Progress](https://github.com/flowscience/hyperfiles/tree/master/widgets/plugins/hyperfiles.jsx)
 - [ ] Publish (file/fileformat) - coming soon!
 - [ ] Explore - coming soon!
 - [ ] Profile - coming soon!
 
-**Top-Level Plugins**
+**Top-Level Plugins**: These are the main components used to interact with the entire Hyperfiles knowledge graph.
 - `newFile`: create a new file via upload, manual input, and queries - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.file)
 - `query`: find any set of things, then mix and match - coming soon!
 - `newJob`: create a new job file and execute a tool config - coming soon!
 
-**Mid-Level Plugins**
+**Mid-Level Plugins**: These components can be used by developers to create new use cases for Hyperfiles.
 - `create.fileformat`: create a new fileformat thing (should fileformats have owners?) - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.fileFormat)
 - `create.record`: create a new record thing - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.record)
 
-**Backend Plugins**
+**Backend Plugins**: These component(s) are used by the top-level and mid-level plugins and likely won't need to be modified when integrating or using Hyperfiles.
 - `create.field`: create a new field thing - [MVP Complete!](https://everything.dev/flowscience.near/widget/create.field)
 
 **Core Types**
