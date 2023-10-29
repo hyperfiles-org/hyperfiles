@@ -6,11 +6,11 @@
 
 ![hypefiles logo](images/logoblack.png)
 
-Organize everything. Hyperfiles is a self-organizing universal knowledge graph.
+Organize everything. Hyperfiles is a self-organizing universal knowledge graph. It was designed to support composable data exchange on open markets and data interoperability between applications or execution environments (e.g. blockchain virtual machines). Hyperfiles is built on the Near Blockchain Operating System (BOS) using [everything.dev](https://everything.dev) and currently only supports data types on Near. However, BOS is fundamentally chain agnostic and multi-chain composability is on the short-term roadmap.
 
 **Quick Start**
-1. [Create a new fileformat](https://everything.dev/flowscience.near/widget/create.fileFormat) (schema)
-2. [Create a new file](https://everything.dev/flowscience.near/widget/create.file) (attestation)
+1. [Create a new fileformat](https://everything.dev/flowscience.near/widget/create.fileFormat)
+2. [Create a new file](https://everything.dev/flowscience.near/widget/create.file)
 
 **Guides and Example Use Cases** (in progress)
 - Guide: ["How to Create a New Fileformat"] - coming soon!
