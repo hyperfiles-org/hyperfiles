@@ -9,6 +9,7 @@
 Organize everything. Hyperfiles is a self-organizing universal knowledge graph. It was designed to support composable data exchange on open markets and data interoperability between applications or execution environments (e.g. blockchain virtual machines). Hyperfiles is built on the Near Blockchain Operating System (BOS) using [everything.dev](https://everything.dev) and currently only supports data types on Near. However, BOS is fundamentally chain agnostic and multi-chain composability is on the short-term roadmap.
 
 **Quick Start**
+
 1. [Create a new fileformat](https://everything.dev/flowscience.near/widget/create.fileFormat)
 2. [Create a new file](https://everything.dev/flowscience.near/widget/create.file)
 
@@ -83,3 +84,23 @@ These features will be developed after a front-end that enables users to manuall
 🧬 Built by [flowscience](https://github.com/flowscience). <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/800px-PD-icon-black.svg.png" alt="Unlicense" width="12" height="12" /> [No rights reserved](https://github.com/flowscience/hyperfiles/blob/master/LICENSE).
 
 ---
+
+
+## Getting Started 
+
+```
+npm install
+```
+
+Then, run the command:
+
+```
+npm run dev
+```
+
+This will serve the widgets from `http://127.0.0.1:4040/`.
+
+Go to [everything.dev/flags](https://everything.dev) and paste this value there.
+
+Once set, see the locally served app at [hyperfiles.near/widget/app](https://everything.dev/hyperfiles.near/widget/app).
+

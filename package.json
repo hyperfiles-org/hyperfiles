@@ -1,0 +1,31 @@
+{
+  "name": "hyperfiles",
+  "version": "1.0.0",
+  "description": "organize everything",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "bos-workspace dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyperfiles-org/hyperfiles.git"
+  },
+  "keywords": [
+    "everything",
+    "knowledge-graph",
+    "composability"
+  ],
+  "author": "hyperfiles.near",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyperfiles-org/hyperfiles/issues"
+  },
+  "homepage": "https://github.com/hyperfiles-org/hyperfiles#readme",
+  "dependencies": {
+    "bos-workspace": "git+https://github.com/nearbuilders/bos-workspace#main"
+  }
+}
