@@ -1,5 +1,5 @@
 const Wrapper = styled.div`
-  max-width: 800px;
+  max-width: 400px;
   margin: 0 auto;
 `;
 
@@ -143,7 +143,7 @@ const handleCreate = () => {
 
 return (
   <Wrapper>
-    <h3>create</h3>
+    <h3>{context.accountId === creatorId ? "create" : "request merge"}</h3>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
