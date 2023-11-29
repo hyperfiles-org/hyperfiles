@@ -1,7 +1,3 @@
-🚧 **_Under active development. Please use wisely._** 🚧
-
----
-
 # Hyperfiles
 
 ![hypefiles logo](images/logoblack.png)
@@ -81,11 +77,6 @@ These features will be developed after a front-end that enables users to manuall
 
 ---
 
-🧬 Built by [flowscience](https://github.com/flowscience). <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/800px-PD-icon-black.svg.png" alt="Unlicense" width="12" height="12" /> [No rights reserved](https://github.com/flowscience/hyperfiles/blob/master/LICENSE).
-
----
-
-
 ## Getting Started 
 
 ```
@@ -103,4 +94,10 @@ This will serve the widgets from `http://127.0.0.1:4040/`.
 Go to [everything.dev/flags](https://everything.dev) and paste this value there.
 
 Once set, see the locally served app at [hyperfiles.near/widget/app](https://everything.dev/hyperfiles.near/widget/app).
+
+---
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/PD-icon-black.svg/800px-PD-icon-black.svg.png" alt="Unlicense" width="12" height="12" /> [No rights reserved](https://github.com/flowscience/hyperfiles/blob/master/LICENSE).
+
+---
 
