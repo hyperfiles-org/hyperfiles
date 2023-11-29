@@ -2,13 +2,12 @@
   "name": "hyperfiles",
   "version": "1.0.0",
   "description": "organize everything",
-  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "dev": "bos-workspace dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bos-workspace build"
   },
   "repository": {
     "type": "git",
