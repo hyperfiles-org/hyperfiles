@@ -15,7 +15,7 @@ const CardContent = styled.div`
 
 const Button = styled.button``;
 
-const [showCover, setShowCover] = useState(true);
+const [showCover, setShowCover] = useState(false);
 
 return (
   <div className="vh-100 w-100 bg-gray-100">
