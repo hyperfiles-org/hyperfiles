@@ -7,7 +7,7 @@
             "isMulti":"false"
             },
         {
-            "name":"memo-why",
+            "name":"memo",
             "type":"string",
             "required":true,
             "isMulti":"false"

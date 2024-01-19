@@ -14,13 +14,13 @@
             },
         {
             "name":"matchingFunds",
-            "type":"integer",
+            "type":"hyperfiles.near/type/matchingFunds",
             "required":true,
             "isMulti":"false"
             },
         {
-            "name":"round",
-            "type":"string",
+            "name":"fundingRound",
+            "type":"hyperfiles.near/type/fundingRound",
             "required":true,
             "isMulti":"false"
             }

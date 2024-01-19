@@ -1,0 +1,14 @@
+{
+    "data":{
+        "fileName":"hypercerts test",
+        "fileFormat":"hyperfiles.near/type/fileformat.hypercert",
+        "records":[
+            "record.hypercert1.json",
+            "record.hypercert2.json"
+        ]  
+    },
+    "template":{
+        "src":""
+        },
+    "type":"hyperfiles.near/type/file"
+}
