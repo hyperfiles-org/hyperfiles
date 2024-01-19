@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"routes",
+            "type":"string",
+            "required":true,
+            "isMulti":true
+            }
+        ],
+    "widgets":{}
+}

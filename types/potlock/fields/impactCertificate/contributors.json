@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"contributors",
+            "type":"every.near/type/list",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

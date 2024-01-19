@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"endDate",
+            "type":"date",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

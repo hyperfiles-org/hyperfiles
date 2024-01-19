@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"usageRights",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"transaction",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

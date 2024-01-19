@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"projectUrl",
+            "type":"hyperfiles.near/type/url",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

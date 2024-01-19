@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"role",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

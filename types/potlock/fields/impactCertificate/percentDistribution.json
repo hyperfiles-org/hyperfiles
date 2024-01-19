@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"percentDistribution",
+            "type":"int",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

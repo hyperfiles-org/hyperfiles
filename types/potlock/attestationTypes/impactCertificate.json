@@ -1,7 +1,7 @@
 {
     "properties":[
         {
-            "name":"impactCertificate",
+            "name":"projectName",
             "type":"string",
             "required":true,
             "isMulti":"false"
@@ -9,6 +9,18 @@
         {
             "name":"impactId",
             "type":"UID",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"impactName",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"impactDescription",
+            "type":"string",
             "required":true,
             "isMulti":"false"
             },

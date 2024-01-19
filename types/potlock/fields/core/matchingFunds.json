@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"matchingFunds",
+            "type":"int",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

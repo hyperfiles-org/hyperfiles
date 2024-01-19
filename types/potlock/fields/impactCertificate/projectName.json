@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"startDate",
-            "type":"date",
+            "name":"projectName",
+            "type":"hyperfiles.near/type/project",
             "required":true,
             "isMulti":"false"
             }

@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"url",
-            "type":"string",
+            "name":"post",
+            "type":"mob.near/widget/social.post",
             "required":true,
             "isMulti":false
             }

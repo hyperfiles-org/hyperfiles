@@ -4,13 +4,13 @@
             "name":"UID",
             "type":"string",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"DNAsequence",
             "type":"string",
             "required":true,
-            "isMulti":"false"
+            "isMulti":true
             }
         ],
     "widgets":{}

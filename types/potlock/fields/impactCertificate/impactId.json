@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"impactId",
+            "type":"UID",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

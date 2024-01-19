@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"description",
+            "type":"post",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"scopeTags",
+            "type":"tag",
+            "required":true,
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}

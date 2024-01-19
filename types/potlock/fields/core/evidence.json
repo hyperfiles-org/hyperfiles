@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"evidence",
+            "type":"hyperfiles.near/type/url",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"startDate",
-            "type":"date",
+            "name":"impactIName",
+            "type":"string",
             "required":true,
             "isMulti":"false"
             }
