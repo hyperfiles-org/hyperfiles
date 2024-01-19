@@ -1,22 +1,22 @@
 {
     "properties":[
         {
-            "name":"project",
+            "name":"donation",
+            "type":"UID",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"memo-why",
             "type":"string",
             "required":true,
             "isMulti":"false"
             },
         {
-            "name":"repo",
-            "type":"URL",
+            "name":"transaction",
+            "type":"transactionHash",
             "required":true,
             "isMulti":"false"
-            },
-        {
-            "name":"routes",
-            "type":"efiz.near/type/routes",
-            "required":true,
-            "isMulti":"true"
             }
         ],
     "widgets":{}

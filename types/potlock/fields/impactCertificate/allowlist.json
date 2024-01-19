@@ -1,0 +1,8 @@
+{
+    "data":{
+        "fieldName":"hypercertAllowlist",
+        "primitive":["every.near/type/list"]
+        },
+    "template":{"src":""},
+    "type":"flowscience.near/type/field"
+}

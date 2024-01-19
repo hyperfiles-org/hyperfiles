@@ -1,7 +1,7 @@
 {
     "properties":[
         {
-            "name":"isRoundPatron",
+            "name":"integration",
             "type":"UID",
             "required":true,
             "isMulti":"false"
@@ -13,16 +13,10 @@
             "isMulti":"false"
             },
         {
-            "name":"matchingFunds",
-            "type":"integer",
+            "name":"evidence",
+            "type":"URL",
             "required":true,
-            "isMulti":"false"
-            },
-        {
-            "name":"round",
-            "type":"string",
-            "required":true,
-            "isMulti":"false"
+            "isMulti":"true"
             }
         ],
     "widgets":{}

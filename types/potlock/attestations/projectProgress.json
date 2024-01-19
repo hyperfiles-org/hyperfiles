@@ -1,10 +1,9 @@
 {
     "properties":[
         {
-            "name":"isContribution",
+            "name":"projectProgress",
             "type":"UID",
-            "required":true,
-            "isMulti":"false"
+            "required":true
             },
         {
             "name":"description",
@@ -13,22 +12,16 @@
             "isMulti":"false"
             },
         {
-            "name":"compensation",
-            "type":"integer",
-            "required":true,
-            "isMulti":"false"
+            "name":"milestone",
+            "type":"hyperfiles.near/type/projectMilestone",
+            "required":false,
+            "isMulti":"true"
             },
         {
             "name":"evidence",
             "type":"URL",
             "required":true,
             "isMulti":"true"
-            },
-        {
-            "name":"role",
-            "type":"string",
-            "required":true,
-            "isMulti":"false"
             }
         ],
     "widgets":{}

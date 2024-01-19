@@ -1,9 +1,10 @@
 {
     "properties":[
         {
-            "name":"projectProgress",
+            "name":"roundPatron",
             "type":"UID",
-            "required":true
+            "required":true,
+            "isMulti":"false"
             },
         {
             "name":"description",
@@ -12,16 +13,16 @@
             "isMulti":"false"
             },
         {
-            "name":"milestone",
-            "type":"projectMilestone",
-            "required":false,
-            "isMulti":"true"
+            "name":"matchingFunds",
+            "type":"integer",
+            "required":true,
+            "isMulti":"false"
             },
         {
-            "name":"evidence",
-            "type":"URL",
+            "name":"round",
+            "type":"string",
             "required":true,
-            "isMulti":"true"
+            "isMulti":"false"
             }
         ],
     "widgets":{}
