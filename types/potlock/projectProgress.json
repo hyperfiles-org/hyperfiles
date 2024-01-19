@@ -1,0 +1,28 @@
+{
+    "properties":[
+        {
+            "name":"projectProgress",
+            "type":"UID",
+            "required":true
+            },
+        {
+            "name":"description",
+            "type":"post",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"milestone",
+            "type":"projectMilestone",
+            "required":false,
+            "isMulti":"true"
+            },
+        {
+            "name":"evidence",
+            "type":"URL",
+            "required":true,
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}

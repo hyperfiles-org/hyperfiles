@@ -1,0 +1,29 @@
+{
+    "properties":[
+        {
+            "name":"isRoundPatron",
+            "type":"UID",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"description",
+            "type":"post",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"matchingFunds",
+            "type":"integer",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"round",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

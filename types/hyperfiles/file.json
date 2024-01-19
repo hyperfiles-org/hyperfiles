@@ -12,11 +12,11 @@
         {
             "name":"fields",
             "type":"every.near/type/thing",
-            "isMulti":"true"},
+            "isMulti":true},
         {
             "name":"records",
             "type":"every.near/type/thing",
-            "isMulti":"true"
+            "isMulti":true
             },
         {
             "name":"owner",

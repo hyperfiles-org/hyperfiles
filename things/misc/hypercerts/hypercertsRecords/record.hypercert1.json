@@ -1,0 +1,37 @@
+{
+    "data":{
+        "formatName":"hypercert",
+        "fields":[
+            {
+                "hypercertName":"My First Hypercert"
+                },
+            {
+                "hypercertProject":"Building Hypercerts on BOS."
+                },
+            {
+                "hypercertScopeTags":"impact, attestation, open-source"
+                },
+            {
+                "hypercertWorkStart":"09-20-2023"
+                },
+            {
+                "hypercertWorkEnd":"01-18-2024"
+                },
+            {
+                "hypercertContributors":"flowscience.near"
+                },
+            {
+                "hypercertUsageRights":"Unrestricted."
+                },
+            {
+                "hypercertAllowlist":"efiz.near, hack.near, hyperfiles.near"
+                },
+            {
+                "hypercertDistribution":"100%"
+                }]
+            },
+        "template":{
+            "src":""
+            },
+        "type":"flowscience.near/type/fileformat.hypercert"
+    }

@@ -17,17 +17,17 @@
         {
             "name":"owner",
             "type":"string",
-            "isMulti":false
+            "isMulti":"false"
             },
         {
             "name":"isEncrypted",
             "type":"boolean",
-            "isMulti":false
+            "isMulti":"false"
             },
         {
             "name":"permissions",
             "type":"every.near/type/thing",
-            "isMulti":false
+            "isMulti":"false"
             }
         ],
     "widgets":{}

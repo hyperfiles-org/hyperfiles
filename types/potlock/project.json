@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"project",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"repo",
+            "type":"URL",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"routes",
+            "type":"efiz.near/type/routes",
+            "required":true,
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}

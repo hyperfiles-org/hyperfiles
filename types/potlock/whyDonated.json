@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"whyDonated",
+            "type":"UID",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"memo",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"donation",
+            "type":"transactionHash",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

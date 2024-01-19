@@ -1,0 +1,1 @@
+{"properties":[{"name":"name","type":"string"},{"name":"description","type":"every.near/type/markdown","isMulti":false},{"name":"image","type":"every.near/type/image","isMulti":false},{"name":"backgroundImage","type":"every.near/type/image","isMulti":false}],"widgets":{}}

@@ -1,0 +1,21 @@
+{
+    "properties":[
+        {
+            "name":"UID",
+            "type":"bytes32"
+            },
+        {
+            "name":"resolver",
+            "type":"ISchemaResolver.sol"
+            },
+        {
+            "name":"revocable",
+            "type":"bool"
+            },
+        {
+            "name":"schema",
+            "type":"string"
+            }
+        ],
+    "widgets":{}
+}

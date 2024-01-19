@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"isIntegrated",
+            "type":"UID",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"description",
+            "type":"post",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"evidence",
+            "type":"URL",
+            "required":true,
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}

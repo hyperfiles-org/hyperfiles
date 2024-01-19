@@ -1,0 +1,17 @@
+{
+    "properties":[
+        {
+            "name":"UID",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"DNAsequence",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            }
+        ],
+    "widgets":{}
+}

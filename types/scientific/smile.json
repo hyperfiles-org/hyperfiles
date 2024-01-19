@@ -1,0 +1,17 @@
+{
+    "properties":[
+        {
+            "name":"UID",
+            "type":"string",
+            "required":true,
+            "isMulti":"false"
+            },
+        {
+            "name":"SMILE",
+            "type":"string",
+            "required":true,
+            "isMulti":"true"
+            }
+        ],
+    "widgets":{}
+}

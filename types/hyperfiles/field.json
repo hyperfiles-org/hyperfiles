@@ -7,7 +7,7 @@
         {
             "name":"primitive",
             "type":"string",
-            "isMulti":"true"
+            "isMulti":true
             }
         ],
     "widgets":{}
