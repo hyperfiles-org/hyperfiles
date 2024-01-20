@@ -1,0 +1,11 @@
+{
+    "": "return \"Hello World!\";",
+    "metadata": {
+      "name": "Hello World",
+      "description": "Renders Hello World",
+      "tags": {
+        "example": "",
+        "inline": ""
+      }
+    }
+  }
