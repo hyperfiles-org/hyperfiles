@@ -1,0 +1,18 @@
+"nodes":[{
+    "id":"abc/xyz",
+    "type":"file",
+    "file":"abc/xyz",
+    "x":-3400,
+    "y":2300,
+    "width":888,
+    "height":888
+  },
+  {
+    "id":"efg/tuv",
+    "type":"file",
+    "file":"efg/tuv",
+    "x":-3400,
+    "y":2300,
+    "width":888,
+    "height":888
+  }],

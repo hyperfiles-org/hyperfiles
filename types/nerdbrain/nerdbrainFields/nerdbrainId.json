@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"nerdbrainId",
+            "type":"int",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

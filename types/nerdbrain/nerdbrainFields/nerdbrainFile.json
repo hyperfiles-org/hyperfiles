@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"nerdbrainFile",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}
