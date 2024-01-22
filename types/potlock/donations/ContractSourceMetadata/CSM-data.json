@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"commit_hash",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"link",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"version",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

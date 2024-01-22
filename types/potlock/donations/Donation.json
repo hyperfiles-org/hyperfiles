@@ -1,0 +1,29 @@
+{
+    "properties":[
+        {
+            "name":"standard",
+            "type":"potlock",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"version",
+            "type":"1.0.0",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"event",
+            "type":"donation",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"data",
+            "type":"donation-data",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

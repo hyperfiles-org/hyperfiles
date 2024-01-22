@@ -1,28 +1,28 @@
 {
     "properties":[
         {
-            "name":"roundPatron",
+            "name":"projectMilestone",
             "type":"UID",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"description",
             "type":"post",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
-            "name":"matchingFunds",
-            "type":"hyperfiles.near/type/matchingFunds",
+            "name":"project",
+            "type":"hyperfiles.near/type/project",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
-            "name":"fundingRound",
-            "type":"hyperfiles.near/type/fundingRound",
+            "name":"isProjectMilestone",
+            "type":"bool",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             }
         ],
     "widgets":{}

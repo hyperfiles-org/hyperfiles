@@ -1,0 +1,35 @@
+{
+    "properties":[
+        {
+            "name":"donation",
+            "type":"UID",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"whyDonated",
+            "type":"memo",
+            "required":false,
+            "isMulti":false
+            },
+        {
+            "name":"hasDonated",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"transaction",
+            "type":"transactionHash",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"isDonor",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

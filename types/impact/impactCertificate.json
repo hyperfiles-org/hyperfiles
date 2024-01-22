@@ -50,7 +50,7 @@
             },
         {
             "name":"contributors",
-            "type":"account",
+            "type":"efiz.near/type/list",
             "required":true,
             "isMulti":"true"
             },
@@ -68,7 +68,7 @@
             },
         {
             "name":"allowlist",
-            "type":"account",
+            "type":"efiz.near/type/list",
             "required":false,
             "isMulti":"true"
             }

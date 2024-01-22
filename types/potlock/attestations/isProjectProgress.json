@@ -3,25 +3,32 @@
         {
             "name":"projectProgress",
             "type":"UID",
-            "required":true
+            "required":true,
+            "isMulti":false
             },
         {
             "name":"description",
             "type":"post",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"milestone",
             "type":"hyperfiles.near/type/projectMilestone",
             "required":false,
-            "isMulti":"true"
+            "isMulti":true
             },
         {
             "name":"evidence",
             "type":"URL",
             "required":true,
-            "isMulti":"true"
+            "isMulti":true
+            },
+        {
+            "name":"isProgress",
+            "type":"bool",
+            "required":true,
+            "isMulti":true
             }
         ],
     "widgets":{}

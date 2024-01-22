@@ -1,0 +1,14 @@
+{
+    "standard": "potlock",
+    "version": "1.0.0",
+    "event": "set_source_metadata",
+    "data": [
+        {
+            "source_metadata": {
+                "commit_hash":"ec02294253b22c2d4c50a75331df23ada9eb04db",
+                "link":"https://github.com/PotLock/core",
+                "version":"0.1.0",
+            }
+        }
+    ]
+}

@@ -4,19 +4,25 @@
             "name":"project",
             "type":"string",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"repository",
             "type":"URL",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"routes",
             "type":"efiz.near/type/routes",
             "required":true,
-            "isMulti":"true"
+            "isMulti":true
+            },
+        {
+            "name":"isRegistered",
+            "type":"bool",
+            "required":true,
+            "isMulti":true
             }
         ],
     "widgets":{}

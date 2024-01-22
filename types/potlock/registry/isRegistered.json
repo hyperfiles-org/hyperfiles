@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"nerdbrainFromNode",
-            "type":"string",
+            "name":"isRegistered",
+            "type":"bool",
             "required":true,
             "isMulti":false
             }

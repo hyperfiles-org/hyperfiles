@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"nerdbrainFromNode",
-            "type":"string",
+            "name":"DonationId",
+            "type":"u64",
             "required":true,
             "isMulti":false
             }

@@ -1,0 +1,35 @@
+{
+    "properties":[
+        {
+            "name":"owner",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"admins",
+            "type":"UnorderedSet<AccountId>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"project_ids",
+            "type":"UnorderedSet<ProjectId>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"projects_by_id",
+            "type":"LookupMap<ProjectId, VersionedProjectInternal>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"contract_source_metadata",
+            "type":"LazyOption<VersionedContractSourceMetadata>",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

@@ -29,6 +29,18 @@
             "type":"string",
             "required":true,
             "isMulti":"false"
+            },
+        {
+            "name":"Name",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":"false"
+            }
+        {
+            "name":"isContributor",
+            "type":"bool",
+            "required":true,
+            "isMulti":"false"
             }
         ],
     "widgets":{}

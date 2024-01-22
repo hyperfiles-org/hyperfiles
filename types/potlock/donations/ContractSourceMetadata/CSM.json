@@ -1,0 +1,29 @@
+{
+    "properties":[
+        {
+            "name":"standard",
+            "type":"potlock",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"version",
+            "type":"1.0.0",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"event",
+            "type":"set-source-metadata",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"data",
+            "type":"CSM-data",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

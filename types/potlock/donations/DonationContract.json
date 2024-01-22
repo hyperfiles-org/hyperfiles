@@ -1,0 +1,59 @@
+{
+    "properties":[
+        {
+            "name":"contract_source_metadata",
+            "type":"LazyOption<VersionedContractSourceMetadata>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"owner",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"protocol_fee_basis_points",
+            "type":"u32",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"referral_fee_basis_points",
+            "type":"u32",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"protocol_fee_recipient_account",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"donations_by_id",
+            "type":"UnorderedMap<DonationId, VersionedDonation>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"donation_ids_by_recipient_id",
+            "type":"LookupMap<AccountId, UnorderedSet<DonationId>>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"donation_ids_by_donor_id",
+            "type":"LookupMap<AccountId, UnorderedSet<DonationId>>",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"donation_ids_by_ft_id",
+            "type":"LookupMap<AccountId, UnorderedSet<DonationId>>",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

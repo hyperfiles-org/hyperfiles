@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"nerdbrainFromNode",
-            "type":"string",
+            "name":"ProjectId",
+            "type":"AccountId",
             "required":true,
             "isMulti":false
             }

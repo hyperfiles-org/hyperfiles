@@ -1,0 +1,29 @@
+{
+    "properties":[
+        {
+            "name":"owner",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"protocol_fee_basis_points",
+            "type":"u32",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"referral_fee_basis_points",
+            "type":"u32",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"protocol_fee_recipient_account",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

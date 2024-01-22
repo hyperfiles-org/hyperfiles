@@ -4,19 +4,25 @@
             "name":"integration",
             "type":"UID",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"description",
             "type":"post",
             "required":true,
-            "isMulti":"false"
+            "isMulti":false
             },
         {
             "name":"evidence",
             "type":"URL",
             "required":true,
-            "isMulti":"true"
+            "isMulti":true
+            },
+        {
+            "name":"isIntegrated",
+            "type":"bool",
+            "required":true,
+            "isMulti":true
             }
         ],
     "widgets":{}
