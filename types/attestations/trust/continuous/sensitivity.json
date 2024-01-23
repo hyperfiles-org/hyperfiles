@@ -1,0 +1,12 @@
+{
+    "properties":[
+        {
+            "name":"sensitivity",
+            "type":"u32",
+            "required":true,
+            "isMulti":false,
+            "options": range(0,100)
+            }
+        ],
+    "widgets":{}
+}

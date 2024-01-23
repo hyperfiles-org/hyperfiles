@@ -16,7 +16,7 @@
             "name":"attestor",
             "type":"account",
             "required":true,
-            "isMulti":true
+            "isMulti":false
             },
         {
             "name":"recipient",

@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"isAccountOwner",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

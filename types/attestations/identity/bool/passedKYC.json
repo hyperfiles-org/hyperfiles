@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"passedKYC",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

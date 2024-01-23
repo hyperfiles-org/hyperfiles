@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"metIRL",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

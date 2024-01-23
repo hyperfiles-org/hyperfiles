@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"star",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}
