@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"object",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"isAccurate",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"attestor",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

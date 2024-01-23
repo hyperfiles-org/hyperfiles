@@ -1,0 +1,29 @@
+{
+    "properties":[
+        {
+            "name":"UID",
+            "type":"bytes32",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"resolver",
+            "type":"attestations.hyperfiles.near/type/schemaResolver",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"revocable",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"schema",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

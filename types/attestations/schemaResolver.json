@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"UID",
+            "type":"bytes32",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"schemaResolver",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"schema",
+            "type":"attesations.hyperfiles.near/type/schema",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

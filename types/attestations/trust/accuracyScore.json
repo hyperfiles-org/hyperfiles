@@ -1,0 +1,24 @@
+{
+    "properties":[
+        {
+            "name":"object",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"accuracyScore",
+            "type":"u32",
+            "required":true,
+            "isMulti":false,
+            "options": range(0,100)
+            },
+        {
+            "name":"attestor",
+            "type":"AccountId",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

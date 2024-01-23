@@ -1,0 +1,23 @@
+{
+    "name": "Near Social",
+    "image": {
+      "ipfs_cid": "bafkreid55mbassw335wezjk3gc5rzizwrqpenfxk3dyyljumxvezplhjg4"
+    },
+    "linktree": {
+      "twitter": "NearSocial_",
+      "github": "NearSocial",
+      "telegram": "NearSocial",
+      "website": "near.social"
+    },
+    "description": "# Near Social\n\n**Near Social** is ...",
+    "backgroundImage": {
+      "ipfs_cid": "bafybeigwqqx2eccpyip66bn2bn6janvss2snv3xuuus3ltin6i46mfkyam"
+    },
+    "tags": {
+      "platform": "",
+      "project": "",
+      "network": "",
+      "protocol": "",
+      "open-source": ""
+    }
+  }

@@ -2,11 +2,14 @@
     "properties":[
         {
             "name":"fieldName",
-            "type":"string"
+            "type":"string",
+            "required":true,
+            "isMulti":false
             },
         {
             "name":"primitive",
             "type":"string",
+            "required":true,
             "isMulti":true
             }
         ],

@@ -1,0 +1,12 @@
+{
+    "properties":[
+        {
+            "name":"trustLevel",
+            "type":"string",
+            "options":["Unknown", "Unsure", "Low", "Medium", "High", "Certain"],
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}
