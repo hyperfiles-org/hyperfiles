@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"isFollower",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

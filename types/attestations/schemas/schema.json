@@ -20,7 +20,7 @@
             },
         {
             "name":"schema",
-            "type":"string",
+            "type":"hyperfiles.near/type/attestation",
             "required":true,
             "isMulti":false
             }
