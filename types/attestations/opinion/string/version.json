@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"version",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

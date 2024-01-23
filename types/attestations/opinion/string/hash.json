@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"hash",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

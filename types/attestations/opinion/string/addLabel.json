@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"addLabel",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

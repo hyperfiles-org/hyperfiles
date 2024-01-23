@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"makeStatement",
+            "type":"str",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}
