@@ -2,25 +2,25 @@
     "properties":[
         {
             "name":"UID",
-            "type":"bytes32",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
             "name":"resolver",
-            "type":"attestations.hyperfiles.near/type/schemaResolver",
-            "required":true,
+            "type":"string",
+            "required":false,
             "isMulti":false
             },
         {
             "name":"revocable",
-            "type":"bool",
+            "type":"boolean",
             "required":true,
             "isMulti":false
             },
         {
             "name":"schema",
-            "type":"hyperfiles.near/type/attestation",
+            "type":"string",
             "required":true,
             "isMulti":false
             }

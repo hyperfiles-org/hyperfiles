@@ -1,10 +1,13 @@
 {
-    "properties":[
+    "schema":[
         {
-            "name":"isVerified",
-            "type":"bool",
+            "name":"isBuilder",
+            "type":"boolean",
             "required":true,
-            "isMulti":false
+            "isMulti":false,
+            "revocable":false,
+            "resolver":"string",
+            "UID":"string"
             }
         ],
     "widgets":{}

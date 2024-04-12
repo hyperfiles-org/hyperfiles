@@ -2,7 +2,7 @@
     "properties":[
         {
             "name":"compensation",
-            "type":"int",
+            "type":"integer",
             "required":true,
             "isMulti":false
             }

@@ -1,0 +1,23 @@
+{
+    "properties":[
+        {
+            "name":"identifier",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"token",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"expires",
+            "type":"dateTime",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

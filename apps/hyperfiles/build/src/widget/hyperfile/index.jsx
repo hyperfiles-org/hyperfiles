@@ -70,7 +70,6 @@ const adapters = [
 
 const [rawData, setRawData] = useState("");
 const [source, setSource] = useState(props.source ?? "");
-const [schema, setSchema] = useState(props.schema ?? "");
 const [adapter, setAdapter] = useState("");
 const [reference, setReference] = useState(undefined);
 const [activeTab, setActiveTab] = useState("data");
@@ -79,6 +78,12 @@ const [description, setDescription] = useState(props.description ?? "");
 const [hyperfile, setHyperfile] = useState("");
 const [type, setType] = useState("");
 const [selectedRepo, setSelectedRepo] = useState(null);
+
+const handleRepoSelect = (repo) => {
+  setSelectedRepo(repo);
+  console.log("Selected repository:", repo);
+  // Now `selectedRepo` can be used in your get and create functions
+};
 
 const rawAdapter =
   (adapter !== "" || adapter !== "custom") && Social.get(adapter, "final");
@@ -152,7 +157,7 @@ const handleCreate = () => {
 return (
   <div className="container mt-3">
     <div className="row p-3">
-      <h1>Hyperfile Creator</h1>
+      <h1>hyperfile creator</h1>
     </div>
     <ul className="nav nav-tabs">
       <li className="nav-item">
@@ -179,41 +184,25 @@ return (
             <div className="col">
               <div className="p-3 border bg-light">
                 <Form>
-                  <h3>Provide the Data</h3>
+                  <h3>provide the data</h3>
                   <FormGroup>
-                    <Label>Source</Label>
-                    <Widget
-                      src="flowscience.near/widget/MetadataEditor"
-                      props={{
-                        initialMetadata: profile,
-                        onChange: (profile) => State.update({ profile }),
-                        options: {
-                          source: {
-                            sourcePattern: "*/profile/source/*",
-                            placeholder: "Select a source",
-                          },
-                        },
-                      }}
+                    <Label>source</Label>
+                    <Input
+                      type="text"
+                      value={source}
+                      onChange={(e) => setSource(e.target.value)}
                     />
                   </FormGroup>
                   <FormGroup>
-                    <Label>Schema</Label>
-                    <Widget
-                      src="flowscience.near/widget/MetadataEditor"
-                      props={{
-                        initialMetadata: profile,
-                        onChange: (profile) => State.update({ profile }),
-                        options: {
-                          source: {
-                            schemaPattern: "*/profile/schema/*",
-                            placeholder: "Select a schema",
-                          },
-                        },
-                      }}
+                    <Label>type</Label>
+                    <Input
+                      type="text"
+                      value={type}
+                      onChange={(e) => setType(e.target.value)}
                     />
                   </FormGroup>
                   <FormGroup>
-                    <Label>Raw Data</Label>
+                    <Label>raw data</Label>
                     <textarea
                       className="form-control"
                       style={{ width: "100%", height: "400px" }}
@@ -227,9 +216,9 @@ return (
             <div className="col">
               <div className="p-3 border bg-light">
                 <Form>
-                  <h3>How to Store It</h3>
+                  <h3>how to store it</h3>
                   <FormGroup>
-                    <Label>Adapter</Label>
+                    <Label>adapter</Label>
                     <Select
                       value={adapter}
                       onChange={(e) => setAdapter(e.target.value)}
@@ -243,7 +232,7 @@ return (
                   {adapter === "flowscience.near/widget/adapter.github" && (
                     <Widget
                       src="flowscience.near/widget/GitHubSearchSelect"
-                      onSelect={(repo) => setSelectedRepo(repo)}
+                      onClick={handleRepoSelect}
                     ></Widget>
                   )}
                 </Form>
@@ -254,7 +243,7 @@ return (
                 <Form>
                   <Button
                     onClick={handleCreate}
-                    disabled={!adapter || !type || !sources || !rawData}
+                    disabled={!adapter || !type || !source || !rawData}
                   >
                     create reference
                   </Button>

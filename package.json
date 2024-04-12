@@ -6,8 +6,11 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "bos-workspace dev",
-    "build": "bos-workspace build"
+    "bw": "bos-workspace",
+    "dev": "bw ws dev",
+    "dev:testnet": "bw ws dev -n testnet",
+    "build": "bw ws build",
+    "build:testnet": "bw ws build -n testnet"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
   },
   "homepage": "https://github.com/hyperfiles-org/hyperfiles#readme",
   "dependencies": {
-    "bos-workspace": "git+https://github.com/nearbuilders/bos-workspace#main"
+    "bos-workspace": "^1.0.0-alpha"
+
   }
 }

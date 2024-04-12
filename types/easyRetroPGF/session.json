@@ -1,26 +1,32 @@
 {
     "properties":[
         {
-            "name":"projectMilestone",
-            "type":"UID",
+            "name":"id",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"description",
-            "type":"post",
+            "name":"sessionToken",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"project",
-            "type":"hyperfiles.near/type/project",
+            "name":"userId",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"isProjectMilestone",
-            "type":"boolean",
+            "name":"expires",
+            "type":"dateTime",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"user",
+            "type":"account",
             "required":true,
             "isMulti":false
             }

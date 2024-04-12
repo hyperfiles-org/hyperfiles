@@ -1,8 +1,8 @@
 {
     "properties":[
         {
-            "name":"ProjectId",
-            "type":"UID",
+            "name":"isPublicGood",
+            "type":"boolean",
             "required":true,
             "isMulti":false
             }

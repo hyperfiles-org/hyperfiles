@@ -46,7 +46,7 @@ return (
     )}
     <div style={{ display: showCover ? "none" : "block" }} className="mt-4">
       <Widget
-        src="${config_account}/widget/hyperfile.index"
+        src="hyperfiles.near/widget/hyperfile.index"
         props={{ creatorId: context.accountId }}
       />
     </div>

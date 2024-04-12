@@ -1,49 +1,43 @@
 {
     "properties":[
         {
-            "name":"UID",
+            "name":"id",
             "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"schema",
-            "type":"UID",
+            "name":"name",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"attestor",
-            "type":"account",
+            "name":"email",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"recipient",
+            "name":"emailVerified",
+            "type":"dateTime",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"image",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            },
+        {
+            "name":"accounts",
             "type":"account",
             "required":true,
             "isMulti":true
             },
         {
-            "name":"expiration",
-            "type":"date",
-            "required":true,
-            "isMulti":false
-            },
-        {
-            "name":"revoked?",
-            "type":"date",
-            "required":true,
-            "isMulti":false
-            },
-        {
-            "name":"refUID",
-            "type":"efiz.near/type/thing",
-            "required":true,
-            "isMulti":true
-            },
-        {
-            "name":"data",
+            "name":"sessions",
             "type":"string",
             "required":true,
             "isMulti":true

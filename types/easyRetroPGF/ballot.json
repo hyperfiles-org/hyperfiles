@@ -1,38 +1,38 @@
 {
     "properties":[
         {
-            "name":"roundPatron",
-            "type":"UID",
+            "name":"voterId",
+            "type":"string",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"description",
-            "type":"post",
+            "name":"createdAt",
+            "type":"dateTime",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"matchingFunds",
-            "type":"hyperfiles.near/type/matchingFunds",
+            "name":"updatedAt",
+            "type":"dateTime",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"fundingRound",
-            "type":"hyperfiles.near/type/fundingRound",
+            "name":"publishedAt",
+            "type":"dateTime",
             "required":true,
             "isMulti":false
             },
         {
-            "name":"Name",
-            "type":"AccountId",
+            "name":"signature",
+            "type":"string",
             "required":true,
             "isMulti":false
-            }
+            },
         {
-            "name":"isRoundPatron",
-            "type":"boolean",
+            "name":"votes",
+            "type":"efiz.near/type/thing",
             "required":true,
             "isMulti":false
             }

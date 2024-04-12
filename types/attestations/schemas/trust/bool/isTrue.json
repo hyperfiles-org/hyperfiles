@@ -2,7 +2,7 @@
     "properties":[
         {
             "name":"isTrue",
-            "type":"bool",
+            "type":"boolean",
             "required":true,
             "isMulti":false
             }

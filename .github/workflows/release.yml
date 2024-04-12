@@ -7,7 +7,7 @@ jobs:
     uses: NEARBuilders/bos-workspace/.github/workflows/deploy.yml@main
     with:
       deploy-env: "mainnet"
-      app-name: "discoverbos"
+      app-name: "hyperfiles"
       deploy-account-address:  hyperfiles.near
       signer-account-address: hyperfiles.near
       signer-public-key: ${{ vars.SIGNER_PUBLIC_KEY }}
