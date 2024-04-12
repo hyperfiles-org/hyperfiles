@@ -205,14 +205,15 @@ return (
     {options.source && (
       <div className="mb-2">
         <Widget
-          src="flowscience.near/widget/source.edit"
+          src="hyperfiles.near/widget/source.edit"
           props={{
-            initialSourceObject: metadata.source,
+            initialSourceObject: state.metadata.source,
             sourcePattern: options.source.pattern,
             placeholder: options.source.placeholder ?? "",
             setSourceObject: (source) => {
               state.metadata.source = source;
-              State.update();
+              State.update(); 
+              onChange({ ...state.metadata, source }); // Trigger parent onChange with new metadata
             },
           }}
         />
@@ -221,14 +222,15 @@ return (
     {options.schema && (
       <div className="mb-2">
         <Widget
-          src="flowscience.near/widget/schema.edit"
+          src="hyperfiles.near/widget/schema.edit"
           props={{
-            initialSchemaObject: metadata.schema,
+            initialSchemaObject: state.metadata.schema,
             schemaPattern: options.schema.pattern,
             placeholder: options.schema.placeholder ?? "",
             setSchemaObject: (schema) => {
               state.metadata.schema = schema;
               State.update();
+              onChange({ ...state.metadata, schema }); // Trigger parent onChange with new metadata
             },
           }}
         />

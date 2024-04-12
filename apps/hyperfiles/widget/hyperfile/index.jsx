@@ -69,8 +69,8 @@ const adapters = [
 //const { GitHubAPIExample } = VM.require(  "create.near/widget/GitHub.API.Example");
 
 const [rawData, setRawData] = useState("");
-const [source, setSource] = useState(props.source ?? "");
-const [schema, setSchema] = useState(props.schema ?? "");
+const [source, setSource] = useState("");
+const [schema, setSchema] = useState("");
 const [adapter, setAdapter] = useState("");
 const [reference, setReference] = useState(undefined);
 const [activeTab, setActiveTab] = useState("data");
@@ -78,7 +78,12 @@ const [name, setName] = useState(props.name ?? "");
 const [description, setDescription] = useState(props.description ?? "");
 const [hyperfile, setHyperfile] = useState("");
 const [type, setType] = useState("");
-const [selectedRepo, setSelectedRepo] = useState(null);
+const [filePath, setFilePath] = useState(null);
+
+const handleSelectRepository = (selectedFilePath) => {
+  console.log("Selected repository:", selectedFilePath);
+  setFilePath(selectedFilePath);
+};
 
 const rawAdapter =
   (adapter !== "" || adapter !== "custom") && Social.get(adapter, "final");
@@ -136,7 +141,7 @@ const handleCreate = () => {
             metadata: {
               name: name,
               description: description,
-              type: type,
+              schema: schema,
             },
           },
         },
@@ -148,6 +153,11 @@ const handleCreate = () => {
     console.log("invalid adapter");
   }
 };
+
+console.log("source: ", source);
+console.log("schema: ", schema);
+console.log("data: ", rawData);
+console.log("adapter: ", adapter);
 
 return (
   <div className="container mt-3">
@@ -179,14 +189,21 @@ return (
             <div className="col">
               <div className="p-3 border bg-light">
                 <Form>
-                  <h3>Provide the Data</h3>
+                  <h3>Content</h3>
                   <FormGroup>
                     <Label>Source</Label>
                     <Widget
-                      src="flowscience.near/widget/MetadataEditor"
+                      src="hyperfiles.near/widget/MetadataEditor"
                       props={{
                         initialMetadata: profile,
-                        onChange: (profile) => State.update({ profile }),
+                        onChange: (newValue) => {
+                          console.log("New Source:", newValue);
+                          setSource(newValue); // Update local state
+                          State.update({
+                            profile: { ...profile, source: newValue }, // Update external state
+                          });
+                        },
+                        value: source,
                         options: {
                           source: {
                             sourcePattern: "*/profile/source/*",
@@ -199,10 +216,17 @@ return (
                   <FormGroup>
                     <Label>Schema</Label>
                     <Widget
-                      src="flowscience.near/widget/MetadataEditor"
+                      src="hyperfiles.near/widget/MetadataEditor"
                       props={{
                         initialMetadata: profile,
-                        onChange: (profile) => State.update({ profile }),
+                        onChange: (newValue) => {
+                          console.log("New Schema:", newValue);
+                          setSchema(newValue); // Update local state
+                          State.update({
+                            profile: { ...profile, schema: newValue }, // Update external state
+                          });
+                        },
+                        value: schema,
                         options: {
                           source: {
                             schemaPattern: "*/profile/schema/*",
@@ -227,7 +251,7 @@ return (
             <div className="col">
               <div className="p-3 border bg-light">
                 <Form>
-                  <h3>How to Store It</h3>
+                  <h3>Storage</h3>
                   <FormGroup>
                     <Label>Adapter</Label>
                     <Select
@@ -240,10 +264,10 @@ return (
                     </Select>
                   </FormGroup>
                   {rawAdapter && <>{parseAdapter(rawAdapter)}</>}
-                  {adapter === "flowscience.near/widget/adapter.github" && (
+                  {adapter === "hyperfiles.near/widget/adapter.github" && (
                     <Widget
                       src="flowscience.near/widget/GitHubSearchSelect"
-                      onSelect={(repo) => setSelectedRepo(repo)}
+                      onSelectRepository={handleSelectRepository}
                     ></Widget>
                   )}
                 </Form>
@@ -254,7 +278,7 @@ return (
                 <Form>
                   <Button
                     onClick={handleCreate}
-                    disabled={!adapter || !type || !sources || !rawData}
+                    disabled={!adapter || !schema || !source || !rawData}
                   >
                     create reference
                   </Button>
