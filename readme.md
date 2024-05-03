@@ -6,8 +6,9 @@ Organize everything. Hyperfiles is a self-organizing universal knowledge graph. 
 
 **Quick Start**
 
-1. [Create a new fileformat](https://everything.dev/flowscience.near/widget/create.fileFormat)
-2. [Create a new file](https://everything.dev/flowscience.near/widget/create.file)
+1. [Hyperfiles Quickstart Guide](http://docs.hyperfiles.org)
+2. [Create a new fileformat](https://everything.dev/flowscience.near/widget/create.fileFormat)
+3. [Create a new file](https://everything.dev/flowscience.near/widget/create.file)
 
 **Guides and Example Use Cases** (in progress)
 - Guide: ["How to Create a New Fileformat"] - coming soon!
