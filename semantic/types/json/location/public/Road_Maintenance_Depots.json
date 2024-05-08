@@ -1,0 +1,46 @@
+{
+    "properties": [
+        {
+            "name": "name",
+            "value": "Road Maintenance Depots",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "category",
+            "value": "Public Services",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "description",
+            "value": "Facilities where road maintenance equipment is stored and operations are managed.",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "accessType",
+            "value": "Government funded",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "userType",
+            "value": "Municipal workers",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "nearby",
+            "value": "Various locations, primarily outskirts of urban areas",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

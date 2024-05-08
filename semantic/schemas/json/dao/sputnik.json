@@ -1,0 +1,87 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "DAO",
+    "description": "A schema defining the structure and governance of a Decentralized Autonomous Organization",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 50,
+        "description": "The name of the DAO",
+        "tags": ["essential", "identity"]
+      },
+      "address": {
+        "type": "string",
+        "pattern": "Blockchain address regex",
+        "description": "Blockchain address for DAO interactions",
+        "tags": ["essential", "identity"]
+      },
+      "soulBoundTokenIssuer": {
+        "type": "string",
+        "pattern": "Blockchain address regex",
+        "description": "Issuer of soul-bound tokens for the DAO",
+        "optional": true,
+        "tags": ["identity"]
+      },
+      "purpose": {
+        "type": "string",
+        "maxLength": 1000,
+        "description": "Purpose and goals of the DAO",
+        "tags": ["core"]
+      },
+      "legalStatus": {
+        "type": "string",
+        "maxLength": 100,
+        "description": "Legal status or incorporation details of the DAO",
+        "optional": true,
+        "tags": ["legal"]
+      },
+      "legalDocument": {
+        "type": "string",
+        "format": "uri",
+        "description": "Link to legal documents or charter of the DAO",
+        "optional": true,
+        "tags": ["legal", "reference"]
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        },
+        "maxItems": 10,
+        "description": "Relevant links and resources",
+        "optional": true,
+        "tags": ["reference"]
+      },
+      "coolDownPeriod": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 31536000,
+        "description": "Cooldown period for governance actions",
+        "tags": ["governance"]
+      },
+      "daoPolicy": {
+        "type": "string",
+        "description": "Reference to governance policy",
+        "tags": ["policy"]
+      },
+      "profileImage": {
+        "type": "string",
+        "format": "uri",
+        "description": "Image representing the DAO",
+        "optional": true,
+        "tags": ["visual"]
+      },
+      "coverImage": {
+        "type": "string",
+        "format": "uri",
+        "description": "Cover image for the DAO",
+        "optional": true,
+        "tags": ["visual"]
+      }
+    },
+    "required": ["name", "address", "purpose", "daoPolicy"]
+  }
+  

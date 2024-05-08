@@ -1,0 +1,10 @@
+{
+    "properties": [
+        {
+            "name": "nearby",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

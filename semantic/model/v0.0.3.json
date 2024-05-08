@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://your.domain/hyperfiles.json",
+  "title": "Hyperfiles",
+  "description": "Schema for Hyperfiles using type-based definitions.",
+  "type": "object",
+  "definitions": {
+    "stringType": {
+      "type": "string"
+    },
+    "uriType": {
+      "type": "string",
+      "format": "uri"
+    },
+    "numberType": {
+      "type": "number"
+    },
+    "tagType": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/stringType"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "properties": {
+    "version": {
+      "$ref": "#/definitions/numberType",
+      "description": "The schema version number."
+    },
+    "tags": {
+      "$ref": "#/definitions/tagType",
+      "description": "Tags associated with the hyperfile."
+    },
+    "source": {
+      "$ref": "#/definitions/uriType",
+      "description": "Source URI for schema details."
+    },
+    "adapter": {
+      "$ref": "#/definitions/uriType",
+      "description": "Adapter URI for external data handling."
+    },
+    "reference": {
+      "$ref": "#/definitions/uriType",
+      "description": "Reference URI for detailed documentation."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata describing dynamic field types and validation.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["string", "number", "boolean", "array", "object"]
+          },
+          "validation": {
+            "type": "object",
+            "properties": {
+              "minLength": { "$ref": "#/definitions/numberType" },
+              "maxLength": { "$ref": "#/definitions/numberType" }
+            }
+          }
+        },
+        "required": ["type"]
+      }
+    }
+  },
+  "required": ["version", "tags", "source", "adapter", "reference"]
+}

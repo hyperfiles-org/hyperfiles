@@ -1,0 +1,1152 @@
+[
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Restrooms",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Restrooms available for public use, often found in parks, transit stations, and public buildings.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban areas, parks, transit stations",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Parks and Recreational Areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Includes city parks, dog parks, sports fields, and public gardens.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban and suburban areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Playgrounds",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Located within community parks or attached to schools, available during non-school hours.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Families, children",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Community parks, near schools",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Beaches",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Coastal areas open for public recreation, swimming, and sunbathing.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Coastal regions",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Libraries",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Offering book lending, internet access, study areas, and sometimes special events like lectures or classes.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public, students, researchers",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban and suburban areas, near educational institutions",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Drinking Fountains",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Commonly located in parks, near public restrooms, and along busy pedestrian areas.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Parks, public spaces",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Pools",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Seasonal outdoor or year-round indoor swimming facilities, sometimes free or with a nominal fee.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free/Nominal Fee",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban and suburban areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Barbecue Areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Designated areas in parks where individuals can grill food using either public or personal grills.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Parks",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Municipal Parking",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Amenities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Free parking areas, often time-limited, typically found in downtown areas or near public facilities.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Drivers",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Downtown areas, near public facilities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Emergency Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Fire stations, police stations, and EMS locations offering immediate help and safety.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Nationwide, in all communities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Schools",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Primary, middle, and high schools funded by tax dollars and free for residents.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Residents, students",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Residential areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Hospitals",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Providing medical services; some services may be free or offered on a sliding scale based on income.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free/Sliding Scale",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public, low-income individuals",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban and suburban areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Transit Systems",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Bus and train stations offering transportation services; while not entirely free, they are subsidized for broader public use.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Subsidized",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "General public, commuters",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban areas, near residential and commercial zones",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Road Maintenance Depots",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Facilities where road maintenance equipment is stored and operations are managed.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Government funded",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Municipal workers",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Various locations, primarily outskirts of urban areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Public Legal Aid Offices",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Offering free legal advice and representation for qualifying individuals in civil matters.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Free",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Low-income residents, individuals in legal need",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban areas, near courthouses or government buildings",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Town Halls and Government Buildings",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Local government services are provided and community meetings are held.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Public access",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Residents, local government officials",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Central locations in towns and cities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Veterans’ Affairs Offices",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Public Services",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Providing services and support for military veterans, including counseling, medical, and career services.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Government funded",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Veterans, military families",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Near military bases, urban centers",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Gymnasiums and Fitness Centers",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Fitness facilities available typically in educational institutions or private clubs.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Students, club members",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Educational campuses, private clubs",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Alumni Clubhouses and Facilities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Exclusive lounges, meeting rooms, and event spaces for university alumni.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "University alumni",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Near universities, in major cities",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Private Parks and Gardens",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Green spaces accessible only to community association members.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Community members",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Gated communities, exclusive residential areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Sports Clubs",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Including golf courses, tennis courts, and swimming pools available for club members.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Club members",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Private property, often suburban or rural areas",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Professional Association Buildings",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Offering meeting spaces, libraries, and event halls for members.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Members of professional associations",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban centers, near business districts",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Country Clubs",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Providing a range of facilities like dining areas, pools, and recreational sports facilities.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Members, their guests",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Suburban areas, sometimes rural",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Business Lounges",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Available in airports and certain premium office buildings for members or people with specific credentials.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Business travelers, club members",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Airports, select urban locations",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    },
+    {
+        "properties": [
+            {
+                "name": "name",
+                "value": "Worker Cooperatives",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "category",
+                "value": "Member Benefits",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "description",
+                "value": "Facilities and resources like shared office spaces or equipment available to members.",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "accessType",
+                "value": "Membership required",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "userType",
+                "value": "Co-op members",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            },
+            {
+                "name": "nearby",
+                "value": "Urban areas, community centers",
+                "type": "string",
+                "required": true,
+                "isMulti": false
+            }
+        ]
+    }
+]

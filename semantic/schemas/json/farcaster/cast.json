@@ -1,0 +1,15 @@
+{
+    "$schema": "https://hyperfiles.near/schema/meta-schema",
+    "title": "Cast",
+    "type": "object",
+    "properties": {
+      "embeds": {"$ref": "Embeds.json"},
+      "hash": {"type": "string"},
+      "text": {"type": "string"},
+      "timestamp": {"type": "string", "format": "date-time"},
+      "user": {"$ref": "User.json"}
+    },
+    "required": ["embeds", "hash", "text", "timestamp", "user"],
+    "tags": ["post", "farcaster", "content", "social"]
+  }
+  

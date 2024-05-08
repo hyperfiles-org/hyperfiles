@@ -1,0 +1,46 @@
+{
+    "properties": [
+        {
+            "name": "name",
+            "value": "Public Parks and Recreational Areas",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "category",
+            "value": "Public Amenities",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "description",
+            "value": "Includes city parks, dog parks, sports fields, and public gardens.",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "accessType",
+            "value": "Free",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "userType",
+            "value": "General public",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "nearby",
+            "value": "Urban and suburban areas",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

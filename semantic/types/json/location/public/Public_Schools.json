@@ -1,0 +1,46 @@
+{
+    "properties": [
+        {
+            "name": "name",
+            "value": "Public Schools",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "category",
+            "value": "Public Services",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "description",
+            "value": "Primary, middle, and high schools funded by tax dollars and free for residents.",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "accessType",
+            "value": "Free",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "userType",
+            "value": "Residents, students",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "nearby",
+            "value": "Residential areas",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

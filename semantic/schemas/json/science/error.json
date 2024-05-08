@@ -1,0 +1,17 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Error",
+    "type": "object",
+    "properties": {
+      "errorType": {
+        "type": "string",
+        "tags": ["trust", "error"]
+      },
+      "description": {
+        "type": "string",
+        "tags": ["opinion", "description"]
+      }
+    },
+    "required": ["errorType"],
+    "tags": ["error", "evaluation"]
+  }

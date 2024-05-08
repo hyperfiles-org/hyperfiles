@@ -1,0 +1,46 @@
+{
+    "properties": [
+        {
+            "name": "name",
+            "value": "Gymnasiums and Fitness Centers",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "category",
+            "value": "Member Benefits",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "description",
+            "value": "Fitness facilities available typically in educational institutions or private clubs.",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "accessType",
+            "value": "Membership required",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "userType",
+            "value": "Students, club members",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "nearby",
+            "value": "Educational campuses, private clubs",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

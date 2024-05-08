@@ -1,0 +1,46 @@
+{
+    "properties": [
+        {
+            "name": "name",
+            "value": "Private Parks and Gardens",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "category",
+            "value": "Member Benefits",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "description",
+            "value": "Green spaces accessible only to community association members.",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "accessType",
+            "value": "Membership required",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "userType",
+            "value": "Community members",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        },
+        {
+            "name": "nearby",
+            "value": "Gated communities, exclusive residential areas",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

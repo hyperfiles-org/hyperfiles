@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Hyperfiles",
+    "description": "Standard Hyperfiles Meta-Schema for Social Entities and Actions",
+    "type": "object",
+    "properties": {
+      "entities": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "entityName": {
+              "type": "string",
+              "description": "Unique identifier or name for the entity."
+            },
+            "image": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "ipfs_cid": {
+                  "type": "string"
+                }
+              },
+              "required": ["url"]
+            },
+            "description": {
+              "type": "string"
+            },
+            "tags": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "metadata": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "fieldName": {
+                        "type": "string"
+                      },
+                      "fieldType": {
+                        "type": "string",
+                        "description": "Type of the field, can be a complex type or a primitive type."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "accounts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "links": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          },
+          "required": ["entityName"]
+        }
+      },
+      "actions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "actionType": {
+              "type": "string",
+              "description": "Type of action, such as 'like', 'follow', etc."
+            },
+            "target": {
+              "type": "string",
+              "description": "Target entity of the action."
+            }
+          },
+          "required": ["actionType", "target"]
+        }
+      }
+    },
+    "required": ["entities", "actions"]
+  }
+  

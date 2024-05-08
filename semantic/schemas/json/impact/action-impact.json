@@ -1,0 +1,26 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Action Impact",
+    "type": "object",
+    "properties": {
+      "like": {
+        "type": "boolean",
+        "tags": ["opinion", "boolean"]
+      },
+      "star": {
+        "type": "boolean",
+        "tags": ["opinion", "boolean"]
+      },
+      "gm": {
+        "type": "boolean",
+        "tags": ["opinion", "boolean"]
+      },
+      "correctnessScore": {
+        "type": "number",
+        "tags": ["trust", "reputation", "metric", "score", "continuous"]
+      }
+    },
+    "required": ["like", "star"],
+    "tags": ["action", "impact", "near social"]
+  }
+  

@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://your.domain/hyperfiles.json",
+  "title": "Hyperfiles",
+  "description": "Schema to define the structure of data in Hyperfiles.",
+  "type": "object",
+  "definitions": {
+    "Field": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "description": "The data type of the field, referencing the type definitions for validation"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "validation": {
+          "type": "object",
+          "properties": {
+            "pattern": { "type": "string" },
+            "minLength": { "type": "integer" },
+            "maxLength": { "type": "integer" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": ["name", "type"]
+    },
+    "Type": {
+      "type": "object",
+      "properties": {
+        "typeName": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Field"
+          }
+        }
+      },
+      "required": ["typeName", "fields"]
+    },
+    "Schema": {
+      "type": "object",
+      "properties": {
+        "schemaName": {
+          "type": "string"
+        },
+        "types": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Type"
+          }
+        }
+      },
+      "required": ["schemaName", "types"]
+    }
+  },
+  "properties": {
+    "schemas": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Schema"
+      }
+    },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
+    "adapter": {
+      "type": "string",
+      "format": "uri"
+    },
+    "reference": {
+      "type": "string",
+      "format": "uri"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "fieldType": {
+            "type": "string",
+            "description": "A reference to the type definition in the schema"
+          },
+          "validation": {
+            "$ref": "#/definitions/Field/properties/validation"
+          }
+        }
+      }
+    }
+  },
+  "required": ["schemas", "source", "adapter", "reference", "metadata"]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://hyperfiles.near/schema/meta-schema",
+    "title": "User",
+    "type": "object",
+    "properties": {
+      "fid": {"type": "string"},
+      "pfp_url": {"type": "string", "format": "uri"},
+      "display_name": {"type": "string"},
+      "bio": {"type": "string"},
+      "username": {"type": "string"}
+    },
+    "required": ["fid", "pfp_url", "display_name", "bio", "username"],
+    "tags": ["profile", "farcaster", "user", "social"]
+  }

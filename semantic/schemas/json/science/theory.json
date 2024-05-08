@@ -1,0 +1,21 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Theory",
+    "type": "object",
+    "properties": {
+      "hypothesis": {
+        "type": "string",
+        "tags": ["opinion", "hypothesis"]
+      },
+      "supportingFacts": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["identity", "support"]
+      }
+    },
+    "required": ["hypothesis"],
+    "tags": ["theory", "hypothesis"]
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Peer Review",
+    "type": "object",
+    "properties": {
+      "reviewer": {
+        "type": "string",
+        "tags": ["identity", "reviewer"]
+      },
+      "comments": {
+        "type": "string",
+        "tags": ["opinion", "feedback"]
+      },
+      "approved": {
+        "type": "boolean",
+        "tags": ["trust", "approval"]
+      }
+    },
+    "required": ["reviewer", "comments"],
+    "tags": ["peer review", "evaluation"]
+  }
+  

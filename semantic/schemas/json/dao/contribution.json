@@ -1,0 +1,73 @@
+{
+    "@context": "<https://hyperfiles.near/schema/meta-schema>",
+    "name": "ContributionAttestation",
+    "description": "Schema for attestations concerning contributions within a DAO",
+    "type": "object",
+    "tags": ["attestation", "contribution"],
+    "properties": {
+      "context": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["configuration"]
+      },
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["configuration"]
+      },
+      "issuer": {
+        "type": "string",
+        "format": "uri",
+        "tags": ["entity"]
+      },
+      "attestationURI": {
+        "type": "string",
+        "format": "uri",
+        "tags": ["resource"]
+      },
+      "expirationDate": {
+        "type": "string",
+        "format": "date-time",
+        "tags": ["temporal"]
+      },
+      "credentialSubject": {
+        "type": "object",
+        "properties": {
+          "contributions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {"type": "string", "tags": ["identifier
+  
+  "]},
+                "description": {"type": "string", "tags": ["description"]},
+                "engagementDate": {"type": "string", "format": "date-time", "tags": ["temporal"]},
+                "hasContributors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {"type": "string", "tags": ["identifier"]},
+                      "id": {"type": "string", "format": "uri", "tags": ["identifier"]}
+                    },
+                    "tags": ["association"]
+                  },
+                  "tags": ["list"]
+                }
+              },
+              "tags": ["detail"]
+            },
+            "tags": ["list"]
+          }
+        },
+        "tags": ["subject"]
+      }
+    },
+    "required": ["type", "issuer", "credentialSubject"]
+  }
+  

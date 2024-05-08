@@ -1,0 +1,25 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Observation",
+    "type": "object",
+    "properties": {
+      "description": {
+        "type": "string",
+        "tags": ["identity", "description"]
+      },
+      "timestamp": {
+        "type": "string",
+        "tags": ["opinion", "time"]
+      },
+      "images": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["identity", "media", "image"]
+      }
+    },
+    "required": ["description"],
+    "tags": ["observation", "evidence"]
+  }
+  

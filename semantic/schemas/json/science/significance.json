@@ -1,0 +1,18 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Significance",
+    "type": "object",
+    "properties": {
+      "level": {
+        "type": "string",
+        "tags": ["reputation", "level"]
+      },
+      "context": {
+        "type": "string",
+        "tags": ["opinion", "context"]
+      }
+    },
+    "required": ["level"],
+    "tags": ["significance", "assessment"]
+  }
+  

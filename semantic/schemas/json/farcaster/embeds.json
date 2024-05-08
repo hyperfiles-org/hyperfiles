@@ -1,0 +1,13 @@
+{
+    "$schema": "https://hyperfiles.near/schema/meta-schema",
+    "title": "Embeds",
+    "type": "object",
+    "properties": {
+      "casts": {"type": "array", "items": {"type": "string"}},
+      "images": {"type": "array", "items": {"type": "string"}},
+      "unknowns": {"type": "array", "items": {"type": "string"}},
+      "urls": {"type": "array", "items": {"type": "string"}},
+      "videos": {"type": "array", "items": {"type": "string"}}
+    },
+    "tags": ["media", "embeds", "farcaster", "links"]
+  }

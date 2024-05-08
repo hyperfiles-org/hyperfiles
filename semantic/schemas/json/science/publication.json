@@ -1,0 +1,29 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Publication",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "tags": ["identity", "title"]
+      },
+      "authors": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["identity", "author"]
+      },
+      "publicationDate": {
+        "type": "string",
+        "tags": ["opinion", "date"]
+      },
+      "journal": {
+        "type": "string",
+        "tags": ["opinion", "journal"]
+      }
+    },
+    "required": ["title", "authors"],
+    "tags": ["publication", "academic"]
+  }
+  

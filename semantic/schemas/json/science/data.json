@@ -1,0 +1,21 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Data",
+    "type": "object",
+    "properties": {
+      "dataPoints": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["identity", "data"]
+      },
+      "analysis": {
+        "type": "string",
+        "tags": ["opinion", "analysis"]
+      }
+    },
+    "required": ["dataPoints"],
+    "tags": ["data", "research data"]
+  }
+  

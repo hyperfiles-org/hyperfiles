@@ -1,0 +1,17 @@
+{
+  "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+  "title": "Fact",
+  "type": "object",
+  "properties": {
+    "statement": {
+      "type": "string",
+      "tags": ["identity", "fact"]
+    },
+    "isVerified": {
+      "type": "boolean",
+      "tags": ["trust", "verification"]
+    }
+  },
+  "required": ["statement", "isVerified"],
+  "tags": ["fact", "verified"]
+}

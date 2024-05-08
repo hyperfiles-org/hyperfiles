@@ -1,0 +1,10 @@
+{
+    "properties": [
+        {
+            "name": "accessType",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "$schema": "https://hyperfiles.near/schema/meta-schema",
+    "title": "ProfileApiResponse",
+    "type": "object",
+    "properties": {
+      "profile": {"$ref": "User.json"}
+    },
+    "tags": ["profile", "api", "farcaster", "user"]
+  }

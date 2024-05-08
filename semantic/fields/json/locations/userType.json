@@ -1,0 +1,10 @@
+{
+    "properties": [
+        {
+            "name": "userType",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

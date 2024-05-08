@@ -1,0 +1,10 @@
+{
+    "$schema": "https://hyperfiles.near/schema/meta-schema",
+    "title": "FeedApiResponse",
+    "type": "object",
+    "properties": {
+      "feed": {"type": "array", "items": {"$ref": "Cast.json"}}
+    },
+    "tags": ["feed", "api", "farcaster", "response"]
+  }
+  

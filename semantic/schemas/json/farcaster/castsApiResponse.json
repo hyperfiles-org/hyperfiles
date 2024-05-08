@@ -1,0 +1,9 @@
+{
+    "$schema": "https://hyperfiles.near/schema/meta-schema",
+    "title": "ProfileCastsApiResponse",
+    "type": "object",
+    "properties": {
+      "casts": {"type": "array", "items": {"$ref": "Cast.json"}}
+    },
+    "tags": ["profile", "api", "farcaster", "casts"]
+  }

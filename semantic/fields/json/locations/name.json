@@ -1,0 +1,10 @@
+{
+    "properties": [
+        {
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}

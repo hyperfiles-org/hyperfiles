@@ -1,0 +1,21 @@
+{
+    "$schema": "<https://hyperfiles.near/schema/meta-schema>",
+    "title": "Methodology",
+    "type": "object",
+    "properties": {
+      "description": {
+        "type": "string",
+        "tags": ["identity", "method"]
+      },
+      "steps": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["opinion", "procedure"]
+      }
+    },
+    "required": ["description"],
+    "tags": ["methodology", "scientific method"]
+  }
+  

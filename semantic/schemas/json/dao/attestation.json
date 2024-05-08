@@ -1,0 +1,45 @@
+{
+    "@context": "<https://hyperfiles.near/schema/meta-schema>",
+    "name": "Attestation",
+    "description": "General schema for DAOIP-3 attestations",
+    "type": "object",
+    "tags": ["attestation", "verifiable credential"],
+    "properties": {
+      "context": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["configuration"]
+      },
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "tags": ["configuration"]
+      },
+      "issuer": {
+        "type": "string",
+        "format": "uri",
+        "tags": ["entity"]
+      },
+      "attestationURI": {
+        "type": "string",
+        "format": "uri",
+        "tags": ["resource"]
+      },
+      "expirationDate": {
+        "type": "string",
+        "format": "date-time",
+        "tags": ["temporal"]
+      },
+      "credentialSubject": {
+        "type": "object",
+        "properties": {},
+        "tags": ["subject"]
+      }
+    },
+    "required": ["type", "issuer", "credentialSubject"]
+  }
+  

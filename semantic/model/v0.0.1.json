@@ -1,0 +1,33 @@
+{
+    "hyperfile" : {
+            "schema" : {
+              "$schema": "https://github.com/SchemaStore/schemastore/blob/master/src/schemas/json/hyperfiles.json",
+              "$id": "hyperfiles.json",
+              "title": "Hyperfiles",
+              "description": "Hyperfiles Meta-Schema",
+              "type": "object",
+              "properties": {
+                      "version": {
+                        "description": "The unique identifier for a schema version",
+                        "type": "number"
+                      },
+                        "tags": {
+                          "description": "Tags for the schema",
+                          "type": "array",
+                          "items": {
+                                "type": "string"
+                          },
+                          "minItems": 1,
+                          "uniqueItems": true
+                    }
+              },
+              "required": [ "version", "tags" ]
+        }
+      }
+      "source": "hyperfiles.near/schema/meta-schema",
+      "adapter": "hyperfiles.near/widget/adapter.ipfs",
+      "reference": "https://gateway.pinata.cloud/ipfs/bafkreiab7moca4zphgcgiphwqavqo33arl7eiejo7cs5z3vxmposv2raaq/",
+      "metadata" : {
+                    "field" : type
+            }
+    }			

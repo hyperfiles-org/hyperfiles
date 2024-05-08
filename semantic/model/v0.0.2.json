@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gateway.pinata.cloud/ipfs/bafkreiab7moca4zphgcgiphwqavqo33arl7eiejo7cs5z3vxmposv2raaq/hyperfiles.json",
+  "title": "Hyperfiles",
+  "description": "Hyperfiles Meta-Schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "description": "The unique identifier for a schema version",
+      "type": "number"
+    },
+    "tags": {
+      "description": "Tags for the schema",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source URI for schema implementation details"
+    },
+    "adapter": {
+      "type": "string",
+      "format": "uri",
+      "description": "Adapter for interfacing with external data sources or services"
+    },
+    "reference": {
+      "type": "string",
+      "format": "uri",
+      "description": "Reference URI to the schema's detailed documentation or specifications"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Dynamic mapping of field names to their expected types",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "fieldType": {
+            "type": "string",
+            "enum": ["string", "number", "boolean", "array", "object"]
+          },
+          "validation": {
+            "type": "object",
+            "properties": {
+              "regex": {
+                "type": "string",
+                "format": "regex",
+                "description": "Regular expression for validating string fields"
+              },
+              "minLength": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Minimum length for string fields"
+              },
+              "maxLength": {
+                "type": "integer",
+                "description": "Maximum length for string fields"
+              },
+              "minItems": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Minimum number of items for array fields"
+              },
+              "maxItems": {
+                "type": "integer",
+                "description": "Maximum number of items for array fields"
+              },
+              "uniqueItems": {
+                "type": "boolean",
+                "description": "Ensure all items in an array are unique"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": ["fieldType"]
+      }
+    }
+  },
+  "required": ["version", "tags"]
+}

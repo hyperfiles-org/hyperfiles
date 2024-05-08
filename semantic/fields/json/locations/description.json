@@ -1,0 +1,10 @@
+{
+    "properties": [
+        {
+            "name": "description",
+            "type": "string",
+            "required": true,
+            "isMulti": false
+        }
+    ]
+}
