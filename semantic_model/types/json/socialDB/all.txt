@@ -1,0 +1,147 @@
+{
+    "alex.near": "",
+    "root.near": "",
+    "mike.near": ""
+  }{
+    "metadata": {
+      "name": "Whale",
+      "description": "A really whalethy user",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Southern_right_whale.jpg"
+      }
+    },
+    "accounts": {
+      "x.near": "",
+      "root.near": ""
+    }
+  }{
+    "whale": {
+      "metadata": {
+        "name": "Whale",
+        "description": "A really whalethy user",
+        "image": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Southern_right_whale.jpg"
+        }
+      },
+      "accounts": {
+        "x.near": "",
+        "root.near": ""
+      }
+    }
+  }{
+    "like": {
+      "root.near": "",
+      "mike.near": ""
+    },
+    "follow": {
+      "mob.near": "",
+      "root.near": ""
+    }
+  }{
+    "twitter": "NearSocial_",
+    "github": "NearSocial",
+    "telegram": "NearSocial",
+    "website": "near.social"
+  }{
+    "name": "Near Social",
+    "image": {
+      "ipfs_cid": "bafkreid55mbassw335wezjk3gc5rzizwrqpenfxk3dyyljumxvezplhjg4"
+    },
+    "linktree": {
+      "twitter": "NearSocial_",
+      "github": "NearSocial",
+      "telegram": "NearSocial",
+      "website": "near.social"
+    },
+    "description": "# Near Social\n\n**Near Social** is ...",
+    "backgroundImage": {
+      "ipfs_cid": "bafybeigwqqx2eccpyip66bn2bn6janvss2snv3xuuus3ltin6i46mfkyam"
+    },
+    "tags": {
+      "platform": "",
+      "project": "",
+      "network": "",
+      "protocol": "",
+      "open-source": ""
+    }
+  }{
+    "contractId": "mrbrownproject.near",
+    "tokenId": "3107"
+  }{
+    "profile": {
+      "name": "NEARCON 22 Demo Acc",
+      "image": {
+        "url": "https://cloudflare-ipfs.com/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE"
+      }
+    },
+    "graph": {
+      "like": {
+        "root.near": "",
+        "mike.near": ""
+      },
+      "follow": {
+        "mob.near": "",
+        "root.near": ""
+      }
+    },
+    "badge": {
+      "whale": {
+        "info": {
+          "name": "Whale",
+          "description": "A really whalethy user",
+          "image": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Southern_right_whale.jpg"
+          }
+        },
+        "holder": {
+          "x.near": "",
+          "root.near": ""
+        }
+      }
+    },
+    "widget": {
+      "HelloWorld": "return \"Hello World!\";",
+      "Test": "return \"Test!\";"
+    },
+    "post": {
+      "meme": {
+        "title": "NEAR Protocol",
+        "description": "Looks the same to me",
+        "image": {
+          "ipfs_cid": "bafkreicrp3nosvz4advbmp26dlmbjkl37gb7etztqf4gforuwxg5ofqov4"
+        }
+      }
+    }
+  }{
+    "near.social": {
+      "homepage": "mob.near/widget/Welcome"
+    }
+  }{
+    "human-guild": "",
+    "founder": "",
+    "artist": "",
+    "nft": ""
+  }{
+    "": "return \"Hello World!\";",
+    "metadata": {
+      "name": "Hello World",
+      "description": "Renders Hello World",
+      "tags": {
+        "example": "",
+        "inline": ""
+      }
+    }
+  }{
+    "HelloWorld": {
+      "": "return \"Hello World!\";",
+      "metadata": {
+        "name": "Hello World",
+        "description": "Renders Hello World",
+        "tags": {
+          "example": "",
+          "inline": ""
+        }
+      }
+    },
+    "Test": "return \"Test!\";"
+  }
