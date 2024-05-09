@@ -1,0 +1,190 @@
+{
+    "name": "BIO Token List",
+    "keywords": [
+        "desci",
+        "ipnft",
+        "BIODAO",
+        "Bio tech"
+    ],
+    "version": {
+        "major": 14,
+        "minor": 0,
+        "patch": 0
+    },
+    "tokens": [
+        {
+            "symbol": "BIO",
+            "name": "BIO.xyz Token",
+            "address": "0xd2cf1dC4Af7da92f849C2fF6A162b73cA3F4b331",
+            "decimals": 18,
+            "chainId": 1
+        },
+        {
+            "symbol": "vBIO",
+            "name": "BIO Vesting Token",
+            "address": "0x1510e9cf00daeB33E9fC9566a70de7C75bE9857b",
+            "decimals": 18,
+            "chainId": 1
+        },
+        {
+            "name": "VitaDAO Token",
+            "symbol": "VITA",
+            "decimals": 18,
+            "description": "VitaDAO Governance Token",
+            "website": "https://www.vitadao.com",
+            "twitter": "@vita_dao",
+            "address": "0x81f8f0bb1cB2A06649E51913A151F0E7Ef6FA321",
+            "chainId": 1,
+            "tokens": {
+                "ethereum": {
+                    "address": "0x81f8f0bb1cB2A06649E51913A151F0E7Ef6FA321"
+                },
+                "optimism": {
+                    "address": "0x7d14206c937e70e19e3a5b94011faf0d5b3928e2"
+                }
+            }
+        },
+        {
+            "symbol": "vVITA",
+            "name": "VitaDAO Virtual Token",
+            "address": "0x7c36c64DA1c3a2065074caa9C48e7648FB733aAB",
+            "decimals": 18,
+            "chainId": 1
+        },
+        {
+            "symbol": "HAIR",
+            "name": "HairDAO Token",
+            "address": "0x9Ce115f0341ae5daBC8B477b74E83db2018A6f42",
+            "decimals": 18,
+            "chainId": 1,
+            "tokens": {
+                "ethereum": {
+                    "address": "0x9Ce115f0341ae5daBC8B477b74E83db2018A6f42"
+                },
+                "optimism": {
+                    "address": "0x5465145a47260D5E715733997333A175D97285Bb"
+                }
+            }
+        },
+        {
+            "symbol": "GROW",
+            "name": "ValleyDAO Token",
+            "address": "0x761A3557184cbC07b7493da0661c41177b2f97fA",
+            "decimals": 18,
+            "chainId": 1,
+            "tokens": {
+                "ethereum": {
+                    "address": "0x761A3557184cbC07b7493da0661c41177b2f97fA"
+                },
+                "optimism": {
+                    "address": "0xc871cCf95024eFa2CbcE69B5B775D2a1DcF49c1B"
+                }
+            }
+        },
+        {
+            "symbol": "vGROW",
+            "name": "ValleyDAO Virtual Token",
+            "address": "0x4f55eDFfd4e9325577D4C8Dde6F15782CEfd6517",
+            "decimals": 18,
+            "chainId": 1
+        },
+        {
+            "symbol": "ATH",
+            "name": "AthenaDAO Token",
+            "address": "0xA4fFdf3208F46898CE063e25c1C43056FA754739",
+            "decimals": 18,
+            "chainId": 1,
+            "tokens": {
+                "ethereum": {
+                    "address": "0xA4fFdf3208F46898CE063e25c1C43056FA754739"
+                },
+                "optimism": {
+                    "address": "0xc62c9B7BE5d4E5D415F682b2331bfa5f0C8D061a"
+                },
+                "base": {
+                    "address": "0x58D75a1c4477914f9a98A8708fEaeD1DbE40b8a3"
+                }
+            }
+        },
+        {
+            "symbol": "CRYO",
+            "name": "CryoDAO Token",
+            "address": "0xf4308b0263723b121056938c2172868E408079D0",
+            "decimals": 18,
+            "chainId": 1,
+            "description": "CryoDAO Governance Token",
+            "website": "https://www.cryodao.org/",
+            "twitter": "https://twitter.com/CryoDAO",
+            "tokens": {
+                "ethereum": {
+                    "address": "0xf4308b0263723b121056938c2172868E408079D0"
+                },
+                "optimism": {
+                    "address": "0x01402d1Bc10Ae6E96C0E494A5860748517a3c070"
+                },
+                "base": {
+                    "address": "0x1f4446fAAAed23090f324f051C3F8c5ce5aD1c36"
+                }
+            }
+        },
+        {
+            "symbol": "NEURON",
+            "name": "CerebrumDAO Token",
+            "address": "0xab814ce69E15F6B9660A3B184c0B0C97B9394A6b",
+            "decimals": 18,
+            "chainId": 1,
+            "description": "CerebrumDAO Token",
+            "website": "https://cerebrumdao.com/",
+            "twitter": "https://twitter.com/Cerebrum_DAO"
+        },
+        {
+            "symbol": "vNEURON",
+            "name": "Cerebrum Virtual DAO Token",
+            "address": "0x304d8ae7c56Fa221b4808004e33255900215295D",
+            "decimals": 18,
+            "chainId": 1
+        },
+        {
+            "symbol": "BIODAO",
+            "name": "Generic Bio DAO",
+            "address": "0x3110a768DC64f7aAB92F7Ae6E1371e5CE581F95F",
+            "decimals": 18,
+            "chainId": 5
+        },
+        {
+            "symbol": "vBIODAO",
+            "name": "Vested Generic Bio DAO",
+            "address": "0x6FFBd6325B2102F5f9AaB74d7418A27F9174c92f",
+            "decimals": 18,
+            "chainId": 5
+        },
+        {
+            "symbol": "MOLDAO",
+            "name": "Generic MOL DAO on Sepolia",
+            "address": "0xe0D404C22228b03D5b8a715Cb569C4944BC5A27A",
+            "decimals": 18,
+            "chainId": 11155111
+        },
+        {
+            "symbol": "vMOLDAO",
+            "name": "Vested MOL DAO on Sepolia",
+            "address": "0x8f80d1183CD983B01B0C9AC6777cC732Ec9800de",
+            "decimals": 18,
+            "chainId": 11155111
+        },
+        {
+            "symbol": "BIODAO",
+            "name": "Generic Bio DAO",
+            "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+            "decimals": 18,
+            "chainId": 31337
+        },
+        {
+            "symbol": "vBIODAO",
+            "name": "Vested Generic Bio DAO",
+            "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+            "decimals": 18,
+            "chainId": 31337
+        }
+    ]
+}

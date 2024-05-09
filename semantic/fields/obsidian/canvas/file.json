@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"file",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

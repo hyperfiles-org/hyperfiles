@@ -1,18 +1,32 @@
 Folder PATH listing for volume OS
 Volume serial number is CC44-72B0
 C:.
+|   how_to_update.md
 |   tree.txt
 |   
 +---fields
-|   +---csv
-|   \---json
-|       \---locations
-|               accessType.json
-|               category.json
-|               description.json
-|               name.json
-|               nearby.json
-|               userType.json
+|   +---locations
+|   |       accessType.json
+|   |       category.json
+|   |       description.json
+|   |       name.json
+|   |       nearby.json
+|   |       userType.json
+|   |       
+|   \---obsidian
+|       \---canvas
+|               edgeId.json
+|               file.json
+|               fromNode.json
+|               fromSide.json
+|               height.json
+|               id.json
+|               toNode.json
+|               toSide.json
+|               type.json
+|               width.json
+|               x-coord.json
+|               y-coord.json
 |               
 +---model
 |       v0.0.1.json
@@ -22,304 +36,283 @@ C:.
 |       v0.0.5.json
 |       
 +---schemas
-|   +---csv
-|   \---json
-|       +---dao
-|       |       attestation.json
-|       |       contribution.json
-|       |       member.json
-|       |       sputnik.json
-|       |       
-|       +---farcaster
-|       |       cast.json
-|       |       castsApiResponse.json
-|       |       embeds.json
-|       |       feedApiResponse.json
-|       |       profileApiResponse.json
-|       |       user.json
-|       |       
-|       +---impact
-|       |       action-impact.json
-|       |       entity-impact.json
-|       |       
-|       +---science
-|       |       data.json
-|       |       error.json
-|       |       fact.json
-|       |       methodology.json
-|       |       observation.json
-|       |       peer-review.json
-|       |       publication.json
-|       |       significance.json
-|       |       statement.json
-|       |       theory.json
-|       |       
-|       \---socialDB
-|               entities-actions.md
-|               entities.json
-|               
+|   +---dao
+|   |       attestation.json
+|   |       contribution.json
+|   |       member.json
+|   |       sputnik.json
+|   |       
+|   +---farcaster
+|   |       cast.json
+|   |       castsApiResponse.json
+|   |       embeds.json
+|   |       feedApiResponse.json
+|   |       profileApiResponse.json
+|   |       user.json
+|   |       
+|   +---impact
+|   |       action-impact.json
+|   |       entity-impact.json
+|   |       
+|   +---science
+|   |       data.json
+|   |       error.json
+|   |       fact.json
+|   |       methodology.json
+|   |       observation.json
+|   |       peer-review.json
+|   |       publication.json
+|   |       significance.json
+|   |       statement.json
+|   |       theory.json
+|   |       
+|   \---socialDB
+|           entities-actions.md
+|           entities.json
+|           
 \---types
-    +---csv
-    |       locations.csv
+    +---ceramic
+    |   |   account.json
+    |   |   consensus.json
+    |   |   eventLog.json
+    |   |   network.json
+    |   |   stream.json
+    |   |   Uri.json
+    |   |   
+    |   \---orbis
+    |           context.json
+    |           
+    +---dao
+    |       sputnik.json
     |       
-    \---json
-        +---ceramic
-        |   |   account.json
-        |   |   consensus.json
-        |   |   eventLog.json
-        |   |   network.json
-        |   |   stream.json
-        |   |   Uri.json
-        |   |   
-        |   \---orbis
-        |           context.json
-        |           
-        +---dao
-        |       sputnik.json
+    +---eas
+    |   |   attestation.json
+    |   |   const item = props.js
+    |   |   EAS_attestation.json
+    |   |   EAS_schema.json
+    |   |   schema.json
+    |   |   schemaResolver.json
+    |   |   
+    |   +---resolvers
+    |   |       attester.json
+    |   |       
+    |   \---schemas
+    |       \---core
+    +---easyRetroPGF
+    |       account.json
+    |       ballot.json
+    |       session.json
+    |       user.json
+    |       verificationToken.json
+    |       
+    +---hyperfiles
+    |   |   field.json
+    |   |   file.json
+    |   |   fileformat.json
+    |   |   metadata.json
+    |   |   record.json
+    |   |   
+    |   \---jobs
+    |           job.json
+    |           toolConfig.json
+    |           
+    +---identity
+    |   +---bool
+    |   |       happyBirthday.json
+    |   |       isAccountOwner.json
+    |   |       isAccreditedInvestor.json
+    |   |       isBuilder.json
+    |   |       isFollower.json
+    |   |       isFollowing.json
+    |   |       isFriend.json
+    |   |       isGithubUser.json
+    |   |       isHuman.json
+    |   |       isTwitterHandle.json
+    |   |       metIRL.json
+    |   |       passedKYC.json
+    |   |       
+    |   \---string
+    |           hasCredential.json
+    |           
+    +---impact
+    |   |   impactCertificate.json
+    |   |   
+    |   \---impactFields
+    |           allowlist.json
+    |           contributors.json
+    |           endDate.json
+    |           impactDescription.json
+    |           impactId.json
+    |           impactName.json
+    |           percentDistribution.json
+    |           projectName.json
+    |           projectUrl.json
+    |           scopeTags.json
+    |           startDate.json
+    |           usageRights.json
+    |           
+    +---ipfs
+    |       cid.json
+    |       
+    +---location
+    |   |   locations.json
+    |   |   
+    |   +---private
+    |   |       Alumni_Clubhouses_and_Facilities.json
+    |   |       Business_Lounges.json
+    |   |       Country_Clubs.json
+    |   |       Gymnasiums_and_Fitness_Centers.json
+    |   |       Private_Parks_and_Gardens.json
+    |   |       Professional_Association_Buildings.json
+    |   |       Sports_Clubs.json
+    |   |       Worker_Cooperatives.json
+    |   |       
+    |   \---public
+    |           Emergency_Services.json
+    |           Municipal_Parking.json
+    |           Public_Barbecue_Areas.json
+    |           Public_Beaches.json
+    |           Public_Drinking_Fountains.json
+    |           Public_Hospitals.json
+    |           Public_Legal_Aid_Offices.json
+    |           Public_Libraries.json
+    |           Public_Parks_and_Recreational_Areas.json
+    |           Public_Playgrounds.json
+    |           Public_Pools.json
+    |           Public_Restrooms.json
+    |           Public_Schools.json
+    |           Public_Transit_Systems.json
+    |           Road_Maintenance_Depots.json
+    |           Town_Halls_and_Government_Buildings.json
+    |           Veterans'_Affairs_Offices.json
+    |           
+    +---meme
+    |       blackdragon.json
+    |       doge.json
+    |       keyboardCat.json
+    |       lonk.json
+    |       neko.json
+    |       rickRoll.json
+    |       
+    +---near
+    |       eventNep297.json
+    |       
+    +---nfts
+    |       erc1155.json
+    |       erc721.json
+    |       nep241.json
+    |       
+    +---obsidian
+    |       canvas.json
+    |       edge.json
+    |       node.json
+    |       
+    +---opinion
+    |   +---bool
+    |   |       gm.json
+    |   |       like.json
+    |   |       star.json
+    |   |       wokeUpBullish.json
+    |   |       
+    |   \---string
+    |           addLabel.json
+    |           hash.json
+    |           makeStatement.json
+    |           nameSomething.json
+    |           version.json
+    |           
+    +---potlock
+    |   |   isContributor.json
+    |   |   isDonor.json
+    |   |   isFollower.json
+    |   |   isIntegrated.json
+    |   |   isProjectMilestone.json
+    |   |   isProjectProgress.json
+    |   |   isPublicGood.json
+    |   |   isRegistered.json
+    |   |   isRoundPatron.json
+    |   |   
+    |   +---donations
+    |   |   |   donation-config.json
+    |   |   |   donation-data.json
+    |   |   |   Donation-example.json
+    |   |   |   Donation.json
+    |   |   |   DonationContract.json
+    |   |   |   DonationId.json
+    |   |   |   TimestampMs.json
+    |   |   |   
+    |   |   \---ContractSourceMetadata
+    |   |           CSM-data.json
+    |   |           CSM-example.json
+    |   |           CSM.json
+    |   |           
+    |   +---fields
+    |   |       account.json
+    |   |       compensation.json
+    |   |       description.json
+    |   |       evidence.json
+    |   |       fundingRound.json
+    |   |       matchingFunds.json
+    |   |       memo.json
+    |   |       post.json
+    |   |       repository.json
+    |   |       role.json
+    |   |       routes.json
+    |   |       transaction.json
+    |   |       url.json
+    |   |       
+    |   \---registry
+    |           isRegistered.json
+    |           ProjectId.json
+    |           RegistryContract.json
+    |           TimestampMs.json
+    |           
+    +---science
+    |   \---data
+    |           fasta.json
+    |           fastq.json
+    |           pdb.json
+    |           sdf.json
+    |           smile.json
+    |           
+    +---socialDB
+    |       accountList.json
+    |       all.txt
+    |       badge.json
+    |       badges.json
+    |       graph.json
+    |       image.json
+    |       index.md
+    |       keyValue.json
+    |       linktree.json
+    |       metadata.json
+    |       nft.json
+    |       post.json
+    |       root.json
+    |       settings.json
+    |       tags.json
+    |       widget.json
+    |       widgets.json
+    |       
+    \---trust
+        +---bool
+        |       isAccurate.json
+        |       isCorrect.json
+        |       isTrue.json
+        |       isTrusted.json
+        |       isVerified.json
         |       
-        +---eas
-        |   |   attestation.json
-        |   |   const item = props.js
-        |   |   EAS_attestation.json
-        |   |   EAS_schema.json
-        |   |   schema.json
-        |   |   schemaResolver.json
-        |   |   
-        |   +---resolvers
-        |   |       attester.json
-        |   |       
-        |   \---schemas
-        |       \---core
-        +---easyRetroPGF
-        |       account.json
-        |       ballot.json
-        |       session.json
-        |       user.json
-        |       verificationToken.json
+        +---continuous
+        |       accuracyScore.json
+        |       AUC.json
+        |       correctnessScore.json
+        |       precision.json
+        |       sensitivity.json
+        |       trustScore.json
         |       
-        +---hyperfiles
-        |   |   field.json
-        |   |   file.json
-        |   |   fileformat.json
-        |   |   metadata.json
-        |   |   record.json
-        |   |   
-        |   \---jobs
-        |           job.json
-        |           toolConfig.json
-        |           
-        +---identity
-        |   +---bool
-        |   |       happyBirthday.json
-        |   |       isAccountOwner.json
-        |   |       isAccreditedInvestor.json
-        |   |       isBuilder.json
-        |   |       isFollower.json
-        |   |       isFollowing.json
-        |   |       isFriend.json
-        |   |       isGithubUser.json
-        |   |       isHuman.json
-        |   |       isTwitterHandle.json
-        |   |       metIRL.json
-        |   |       passedKYC.json
-        |   |       
-        |   \---string
-        |           hasCredential.json
-        |           
-        +---impact
-        |   |   impactCertificate.json
-        |   |   
-        |   \---impactFields
-        |           allowlist.json
-        |           contributors.json
-        |           endDate.json
-        |           impactDescription.json
-        |           impactId.json
-        |           impactName.json
-        |           percentDistribution.json
-        |           projectName.json
-        |           projectUrl.json
-        |           scopeTags.json
-        |           startDate.json
-        |           usageRights.json
-        |           
-        +---ipfs
-        |       cid.json
-        |       
-        +---location
-        |   |   locations.json
-        |   |   
-        |   +---private
-        |   |       Alumni_Clubhouses_and_Facilities.json
-        |   |       Business_Lounges.json
-        |   |       Country_Clubs.json
-        |   |       Gymnasiums_and_Fitness_Centers.json
-        |   |       Private_Parks_and_Gardens.json
-        |   |       Professional_Association_Buildings.json
-        |   |       Sports_Clubs.json
-        |   |       Worker_Cooperatives.json
-        |   |       
-        |   \---public
-        |           Emergency_Services.json
-        |           Municipal_Parking.json
-        |           Public_Barbecue_Areas.json
-        |           Public_Beaches.json
-        |           Public_Drinking_Fountains.json
-        |           Public_Hospitals.json
-        |           Public_Legal_Aid_Offices.json
-        |           Public_Libraries.json
-        |           Public_Parks_and_Recreational_Areas.json
-        |           Public_Playgrounds.json
-        |           Public_Pools.json
-        |           Public_Restrooms.json
-        |           Public_Schools.json
-        |           Public_Transit_Systems.json
-        |           Road_Maintenance_Depots.json
-        |           Town_Halls_and_Government_Buildings.json
-        |           Veterans'_Affairs_Offices.json
-        |           
-        +---meme
-        |       blackdragon.json
-        |       doge.json
-        |       keyboardCat.json
-        |       lonk.json
-        |       neko.json
-        |       rickRoll.json
-        |       
-        +---near
-        |       eventNep297.json
-        |       
-        +---nerdbrain
-        |   +---nerdbrainFields
-        |   |       nerdbrainEdgeId.json
-        |   |       nerdbrainFile.json
-        |   |       nerdbrainFromNode.json
-        |   |       nerdbrainFromSide.json
-        |   |       nerdbrainHeight.json
-        |   |       nerdbrainId.json
-        |   |       nerdbrainToNode.json
-        |   |       nerdbrainToSide.json
-        |   |       nerdbrainType.json
-        |   |       nerdbrainWidth.json
-        |   |       nerdbrainX.json
-        |   |       nerdbrainY.json
-        |   |       
-        |   \---nerdbrainTypes
-        |           canvas.json
-        |           edge.json
-        |           node.json
-        |           
-        +---nfts
-        |       erc1155.json
-        |       erc721.json
-        |       nep241.json
-        |       
-        +---opinion
-        |   +---bool
-        |   |       gm.json
-        |   |       like.json
-        |   |       star.json
-        |   |       wokeUpBullish.json
-        |   |       
-        |   \---string
-        |           addLabel.json
-        |           hash.json
-        |           makeStatement.json
-        |           nameSomething.json
-        |           version.json
-        |           
-        +---potlock
-        |   |   isContributor.json
-        |   |   isDonor.json
-        |   |   isFollower.json
-        |   |   isIntegrated.json
-        |   |   isProjectMilestone.json
-        |   |   isProjectProgress.json
-        |   |   isPublicGood.json
-        |   |   isRegistered.json
-        |   |   isRoundPatron.json
-        |   |   
-        |   +---donations
-        |   |   |   donation-config.json
-        |   |   |   donation-data.json
-        |   |   |   Donation-example.json
-        |   |   |   Donation.json
-        |   |   |   DonationContract.json
-        |   |   |   DonationId.json
-        |   |   |   TimestampMs.json
-        |   |   |   
-        |   |   \---ContractSourceMetadata
-        |   |           CSM-data.json
-        |   |           CSM-example.json
-        |   |           CSM.json
-        |   |           
-        |   +---fields
-        |   |       account.json
-        |   |       compensation.json
-        |   |       description.json
-        |   |       evidence.json
-        |   |       fundingRound.json
-        |   |       matchingFunds.json
-        |   |       memo.json
-        |   |       post.json
-        |   |       repository.json
-        |   |       role.json
-        |   |       routes.json
-        |   |       transaction.json
-        |   |       url.json
-        |   |       
-        |   \---registry
-        |           isRegistered.json
-        |           ProjectId.json
-        |           RegistryContract.json
-        |           TimestampMs.json
-        |           
-        +---science
-        |   \---data
-        |           fasta.json
-        |           fastq.json
-        |           pdb.json
-        |           sdf.json
-        |           smile.json
-        |           
-        +---socialDB
-        |       accountList.json
-        |       all.txt
-        |       badge.json
-        |       badges.json
-        |       graph.json
-        |       image.json
-        |       index.md
-        |       keyValue.json
-        |       linktree.json
-        |       metadata.json
-        |       nft.json
-        |       post.json
-        |       root.json
-        |       settings.json
-        |       tags.json
-        |       widget.json
-        |       widgets.json
-        |       
-        \---trust
-            +---bool
-            |       isAccurate.json
-            |       isCorrect.json
-            |       isTrue.json
-            |       isTrusted.json
-            |       isVerified.json
-            |       
-            +---continuous
-            |       accuracyScore.json
-            |       AUC.json
-            |       correctnessScore.json
-            |       precision.json
-            |       sensitivity.json
-            |       trustScore.json
-            |       
-            \---discrete
-                    accuracyLevel.json
-                    confidenceLevel.json
-                    correctnessLevel.json
-                    trustLevel.json
-                    
+        \---discrete
+                accuracyLevel.json
+                confidenceLevel.json
+                correctnessLevel.json
+                trustLevel.json
+                

@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"height",
+            "type":"int",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

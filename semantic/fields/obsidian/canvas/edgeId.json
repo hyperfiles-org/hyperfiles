@@ -1,0 +1,10 @@
+{
+    "properties":[
+        {
+            "name":"edgeId",
+            "type":"int",
+            "required":true,
+            "isMulti":false
+            }
+        ]
+}

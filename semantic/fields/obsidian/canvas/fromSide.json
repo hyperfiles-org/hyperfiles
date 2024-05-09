@@ -1,0 +1,12 @@
+{
+    "properties":[
+        {
+            "name":"fromSide",
+            "type":"string",
+            "required":true,
+            "isMulti":false,
+            "options":["left", "right", "top", "bottom"]
+            }
+        ],
+    "widgets":{}
+}

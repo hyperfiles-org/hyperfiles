@@ -1,0 +1,10 @@
+{
+    "properties":[
+        {
+            "name":"isCorrect",
+            "type":"bool",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+}

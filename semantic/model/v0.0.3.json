@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://your.domain/hyperfiles.json",
+  "$id": "https://hyperfiles.org/schema/model.v0.0.3.json",
   "title": "Hyperfiles",
   "description": "Schema for Hyperfiles using type-based definitions.",
   "type": "object",

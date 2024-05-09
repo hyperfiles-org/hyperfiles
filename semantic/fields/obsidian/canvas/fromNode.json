@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"fromNode",
+            "type":"string",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+    "widgets":{}
+}

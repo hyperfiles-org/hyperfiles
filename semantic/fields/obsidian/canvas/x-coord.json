@@ -1,0 +1,10 @@
+{
+    "properties":[
+        {
+            "name":"x-coord",
+            "type":"int",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+}

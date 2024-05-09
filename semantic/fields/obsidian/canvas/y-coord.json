@@ -1,0 +1,10 @@
+{
+    "properties":[
+        {
+            "name":"y-coord",
+            "type":"int",
+            "required":true,
+            "isMulti":false
+            }
+        ],
+}

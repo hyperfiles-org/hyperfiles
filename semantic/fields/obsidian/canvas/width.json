@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"width",
+            "type":"int",
+            "required":true,
+            "isMulti":false,
+            }
+        ],
+    "widgets":{}
+}

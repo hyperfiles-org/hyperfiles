@@ -1,0 +1,45 @@
+{
+    "$id": "project.json",
+    "title": "Project",
+    "type": "object",
+    "description": "A project is a collection of artifacts",
+    "properties": {
+      "version": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "display_name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "websites": {
+        "type": "array",
+        "items": {
+          "$ref": "url.json#"
+        }
+      },
+      "github": {
+        "type": "array",
+        "items": {
+          "$ref": "url.json#"
+        }
+      },
+      "npm": {
+        "type": "array",
+        "items": {
+          "$ref": "url.json#"
+        }
+      },
+      "blockchain": {
+        "type": "array",
+        "items": {
+          "$ref": "blockchain-address.json#"
+        }
+      }
+    },
+    "required": ["version", "name", "display_name"]
+  }

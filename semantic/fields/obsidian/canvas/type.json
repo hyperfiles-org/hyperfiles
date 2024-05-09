@@ -1,0 +1,11 @@
+{
+    "properties":[
+        {
+            "name":"type",
+            "type":"string",
+            "required":true,
+            "isMulti":false,
+            }
+        ],
+    "widgets":{}
+}
