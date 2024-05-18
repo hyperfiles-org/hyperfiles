@@ -1,0 +1,122 @@
+{
+    "$schema": "<http://json-schema.org/draft-07/schema#>",
+    "$id": "<https://hyperfiles.org/schema/hyperfiles_meta_v0.0.6.json>",
+    "title": "Hyperfiles Meta-Schema",
+    "description": "Defines the structure and semantics for data objects managed within Hyperfiles.",
+    "type": "object",
+    "properties": {
+      "schemas": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Schema"
+        }
+      },
+      "source": {
+        "type": "string",
+        "format": "uri",
+        "description": "The source URL where the schema definitions are located."
+      },
+      "adapter": {
+        "type": "string",
+        "format": "uri",
+        "description": "Adapter path for connecting the schema with the external data sources."
+      },
+      "reference": {
+        "type": "string",
+        "format": "uri",
+        "description": "A reference URL to detailed documentation or implementation guidelines for this schema."
+      },
+      "metadata": {
+        "type": "object",
+        "description": "Metadata provides additional contextual information about the schema, including semantic descriptions, usage guidelines, and other relevant data.",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "semanticType": {
+              "type": "string",
+              "description": "A semantic tag that classifies the kind of information this schema handles."
+            },
+            "usage": {
+              "type": "string",
+              "description": "Describes how and in what context this schema should be used."
+            },
+            "validation": {
+              "$ref": "#/definitions/Field/properties/validation"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Schema": {
+        "type": "object",
+        "properties": {
+          "schemaName": {
+            "type": "string",
+            "description": "The name of the schema."
+          },
+          "types": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Type"
+            },
+            "description": "A collection of types that define the structure of data objects within this schema."
+          }
+        },
+        "required": ["schemaName", "types"]
+      },
+      "Type": {
+        "type": "object",
+        "properties": {
+          "typeName": {
+            "type": "string",
+            "description": "The name of the type."
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Field"
+            },
+            "description": "Fields that compose this type, each field defining a specific aspect of the data type."
+          }
+        },
+        "required": ["typeName", "fields"]
+      },
+      "Field": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the field."
+          },
+          "type": {
+            "type": "string",
+            "description": "The data type of the field, referencing the type definitions for validation."
+          },
+          "required": {
+            "type": "boolean",
+            "description": "Indicates whether this field is mandatory."
+          },
+          "validation": {
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "type": "string"
+              },
+              "minLength": {
+                "type": "integer"
+              },
+              "maxLength": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false,
+            "description": "Validation rules for the field, ensuring data integrity."
+          }
+        },
+        "required": ["name", "type"]
+      }
+    },
+    "required": ["schemas", "source", "adapter", "reference", "metadata"]
+  }
+  
