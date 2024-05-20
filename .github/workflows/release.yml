@@ -13,3 +13,13 @@ jobs:
       signer-public-key: ${{ vars.SIGNER_PUBLIC_KEY }}
     secrets:
       SIGNER_PRIVATE_KEY:  ${{ secrets.SIGNER_PRIVATE_KEY }}
+  attest-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Attestation
+        id: attestation
+        uses: show-karma/github-attestation-action@master
+        with:
+          private-key: ${{ secrets.EVM_PRIVATE_KEY }}
+          network: sepolia
+          branch: master
